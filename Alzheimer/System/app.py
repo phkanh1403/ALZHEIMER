@@ -5,6 +5,7 @@ import joblib
 import pandas as pd
 from cohort import build, SETS
 from train import probability, H
+from dashboards import model_dashboard, profile_dashboard
 from manual import make_features, missing_features
 
 st.title("Dự báo MCI tại tái khám")
@@ -17,7 +18,7 @@ data,_ = st.cache_data(build)("demo")
 results = pd.read_csv(folder/"predictions.csv")
 rid = st.selectbox("Hồ sơ giả lập thuộc tập test",results.rid)
 row = data[data.rid.eq(rid)]
-tabs = st.tabs(["Hồ sơ mẫu","Dự báo hồ sơ mẫu","Dashboard","Nhập hồ sơ mới"])
+tabs = st.tabs(["Hồ sơ mẫu","Dự báo hồ sơ mẫu","Dashboard mô hình","Nhập hồ sơ mới","Dashboard hồ sơ"])
 with tabs[0]:
     history = pd.read_csv("demo/measures.csv")
     st.dataframe(history[history.rid.eq(rid)].sort_values("date"))
@@ -27,14 +28,15 @@ with tabs[1]:
     for name in ("M2","M3"):
         st.metric(name,f"{probability(models[name],row[SETS[name]])[0]:.1%}")
 with tabs[2]:
-    st.caption("Chỉ số trên dữ liệu giả lập")
-    st.dataframe(pd.read_csv(folder/"metrics.csv"))
+    model_dashboard(results, data, pd.read_csv(folder/"metrics.csv"))
+with tabs[4]:
+    profile_dashboard(pd.read_csv("demo/visits.csv", parse_dates=["date"]), results)
 
 with tabs[3]:
     st.subheader("Dự báo tại lần tái khám")
     st.caption("Dùng số liệu giả lập hoặc đã khử định danh để trình diễn.")
     with st.form("new_profile"):
-        eligible = st.checkbox("Hồ sơ có MCI ở hai mốc và chưa từng được ghi nhận Dementia đến lần tái khám")
+        eligible = st.checkbox("Hồ sơ có MCI ở hai mốc và chưa từng được ghi nhận Dementia đến lần tái khám", key="manual_mci_eligible")
         age = st.number_input("Tuổi tại tái khám", min_value=18, max_value=120, value=72)
         sex = st.selectbox("Giới", ["Nữ", "Nam"])
         education = st.number_input("Số năm học", min_value=0, max_value=40, value=16)

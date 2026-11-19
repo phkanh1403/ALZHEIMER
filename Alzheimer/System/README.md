@@ -14,3 +14,7 @@ landmarks.csv ghi ngày đầu, mốc và ngày kết thúc. cohort.csv gồm đ
 
 ## Nhập hồ sơ mới
 Mở tab **Nhập hồ sơ mới**, xác nhận điều kiện MCI và nhập hai mốc khám, MMSE, FAQ và số đo MRI. Bấm **Tính dự báo** để xem xác suất M2/M3 trong 183 ngày cùng bảng đặc trưng. Các trường điểm mặc định chỉ phục vụ trình diễn. Giao diện coi điểm MMSE/FAQ được đo vào ngày khám. Bỏ chọn “Có số đo MRI” ở mốc tương ứng nếu thiếu dữ liệu. Phiên bản này dùng mô hình huấn luyện trên tập đủ cặp MRI và báo rõ khi hồ sơ nằm ngoài điều kiện đó.
+
+## Hai dashboard
+- **Dashboard mô hình** có tab M0–M3, ngưỡng minh họa mặc định 50%, ma trận TP/TN/FP/FN, ROC trên hồ sơ có kết cục xác định và ma trận Spearman. Ma trận nhầm lẫn và ROC loại ca kiểm duyệt trước ngày 183. Bảng AUC/Brier vẫn lấy số liệu đánh giá sống còn từ pipeline.
+- **Dashboard hồ sơ** dùng một dòng mỗi RID tại lượt khám mới nhất để đếm chẩn đoán, tuổi, giới. Xác suất ở mốc tái khám được ghép từ tập test, có thể lọc theo chẩn đoán và chọn M0–M3. Hồ sơ nhập tay dùng cho lần dự báo trên form và không được lưu trong danh sách có sẵn.
