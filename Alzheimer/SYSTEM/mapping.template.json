@@ -1,0 +1,1 @@
+{"reviewed":false,"phases":{"REPLACE_WITH_PHASE":{"dx_date":"EXAMDATE","dx_field":"DIAGNOSIS","diagnoses":{"CODE_CN":"CN","CODE_MCI":"MCI","CODE_DEMENTIA":"Dementia"},"female":{"CODE_FEMALE":1,"CODE_MALE":0},"mmse_done":["CONFIRMED_DONE_CODE"],"accepted":{"STATUS":["CONFIRMED_STATUS"],"OVERALLQC":["CONFIRMED_PASS"],"HIPPOQC":["CONFIRMED_PASS"],"TEMPQC":["CONFIRMED_PASS"]}}}}
