@@ -1,0 +1,212 @@
+{
+  "reviewed": true,
+  "phases": {
+    "ADNI1": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        ""
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      }
+    },
+    "ADNIGO": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        ""
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      }
+    },
+    "ADNI2": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        ""
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      }
+    },
+    "ADNI3": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        "1"
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      }
+    },
+    "ADNI4": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        "1"
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      }
+    },
+    "TEAM": {
+      "dx_date": "EXAMDATE",
+      "dx_field": "DIAGNOSIS",
+      "diagnoses": {
+        "1": "CN",
+        "2": "MCI",
+        "3": "Dementia"
+      },
+      "female": {
+        "1": 0,
+        "2": 1
+      },
+      "mmse_done": [
+        "1"
+      ],
+      "accepted": {
+        "STATUS": [
+          "Complete",
+          "complete"
+        ],
+        "OVERALLQC": [
+          "Pass",
+          "pass"
+        ],
+        "HIPPOQC": [
+          "Pass",
+          "pass"
+        ],
+        "TEMPQC": [
+          "Pass",
+          "pass"
+        ]
+      },
+      "no_diagnosis": [
+        "10"
+      ]
+    }
+  }
+}
