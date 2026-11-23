@@ -20,28 +20,31 @@ if visits:
     anchor = st.selectbox("Ngày tái khám cần đánh giá", sorted(visits, reverse=True))
     if st.button("Tạo phiếu dự báo"):
         try:
-            vrows, measures, ids = [],[],[]
-            for key,r in visits.items():
-                if key > anchor:
-                    continue
-                p = r["payload"]
-                ids.append(r["id"])
-                vrows.append(dict(p,rid=patient,date=pd.Timestamp(key)))
-                for variable in ["mmse","faq","hippo","entor"]:
-                    mri = variable in ("hippo","entor")
-                    if p[variable] is None or (mri and p["available"] > anchor):
-                        continue
-                    measures.append(dict(rid=patient,date=pd.Timestamp(p["scan"] if mri else key),
-                        variable=variable,value=p[variable],qc=p["qc"] if mri else 1,
-                        version=p["version"] if mri else "clinical"))
-            cols = ["rid","date","variable","value","qc","version"]
-            row,_ = build_frames(pd.DataFrame(vrows),pd.DataFrame(measures,columns=cols).drop_duplicates())
-            source=visits[anchor]["payload"].get("normalized_dir")
+            ids = [r["id"] for k,r in visits.items() if k <= anchor]
+            source = visits[anchor]["payload"].get("normalized_dir")
             if source:
-                feature_file=Path(source)/"features_m06.csv"
-                if feature_file.exists():
-                    imported=pd.read_csv(feature_file,dtype={"rid":str},parse_dates=["t0"])
-                    row=imported[imported.rid.eq(patient.removeprefix("ADNI-")) & imported.t0.eq(pd.Timestamp(anchor))]
+                feature_file = Path(source)/"features_m06.csv"
+                if not feature_file.is_file():
+                    raise ValueError("Gói này chưa có hồ sơ đạt mốc M06.")
+                imported = pd.read_csv(feature_file, dtype={"rid": str}, parse_dates=["t0"])
+                row = imported[imported.rid.eq(patient.removeprefix("ADNI-")) & imported.t0.eq(pd.Timestamp(anchor))]
+            else:
+                vrows, measures, ids = [],[],[]
+                for key,r in visits.items():
+                    if key > anchor:
+                        continue
+                    p = r["payload"]
+                    ids.append(r["id"])
+                    vrows.append(dict(p,rid=patient,date=pd.Timestamp(key)))
+                    for variable in ["mmse","faq","hippo","entor"]:
+                        mri = variable in ("hippo","entor")
+                        if p[variable] is None or (mri and (not p.get("available") or p["available"] > anchor)):
+                            continue
+                        measures.append(dict(rid=patient,date=pd.Timestamp(p["scan"] if mri else key),
+                            variable=variable,value=p[variable],qc=p["qc"] if mri else 1,
+                            version=p["version"] if mri else "clinical"))
+                cols = ["rid","date","variable","value","qc","version"]
+                row,_ = build_frames(pd.DataFrame(vrows),pd.DataFrame(measures,columns=cols).drop_duplicates())
             if row.empty or str(row.iloc[0].t0.date()) != anchor:
                 raise ValueError("Lượt chọn chưa đáp ứng mốc MCI tháng thứ sáu.")
             result=run_score(row)

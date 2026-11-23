@@ -10,7 +10,7 @@ from cohort import SETS
 from storage import history, entries,engine,record
 from train import probability
 
-folder=Path(os.getenv("ADNI_MODEL_DIR","runs/demo"))
+folder=Path(os.getenv("ADNI_MODEL_DIR","runs/adni"))
 
 @st.cache_resource
 def load_models(path,modified):
@@ -35,6 +35,10 @@ def select_patient():
 
 def ingest(dest,batch):
     visits=pd.read_csv(dest/"visits.csv",dtype={"rid":str})
+    measures = pd.read_csv(dest/"measures.csv", dtype={"rid": str})
+    variables = ["mmse", "faq", "hippo", "entor"]
+    wide = measures.loc[measures.qc.eq(1)].pivot(index=["rid", "date"], columns="variable", values="value")
+    visits = visits.merge(wide.reindex(columns=variables), on=["rid", "date"], how="left", validate="one_to_one")
     features=dest/"features_m06.csv"
     rows=pd.read_csv(features,dtype={"rid":str}).set_index("rid") if features.exists() else pd.DataFrame()
     scored=0
@@ -45,8 +49,8 @@ def ingest(dest,batch):
             if json.dumps(p,sort_keys=True,ensure_ascii=False) not in existing:
                 record(patient,kind,p)
         for v in json.loads(group.to_json(orient="records")):
-            save("visit",dict(v,normalized_dir=str(dest.resolve()),batch=batch,mmse=None,faq=None,hippo=None,entor=None))
-        if rid in rows.index:
+            save("visit",dict(v,normalized_dir=str(dest.resolve()),batch=batch))
+        if rid in rows.index and (folder/"branches.joblib").is_file():
             result=run_score(rows.loc[[rid]])
             if result:
                 save("prediction",dict(result,t0=str(rows.loc[rid,"t0"])[:10],horizon=183,batch=batch))
