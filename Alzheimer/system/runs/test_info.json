@@ -1,9 +1,0 @@
-{
- "test_landmarks": 1021,
- "test_persons": 264,
- "shared_landmarks": 305,
- "shared_persons": 141,
- "shared_events_in_window": 38,
- "second_mci_persons": 23,
- "note_second_mci": "Không báo cáo phân nhóm mốc MCI lần 2 vì dưới 60 người"
-}
