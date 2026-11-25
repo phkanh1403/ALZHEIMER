@@ -1,0 +1,76 @@
+{
+  "version": "ver5",
+  "locked_at": "2026-11-25T23:30:00+07:00",
+  "locked_before": "Mọi lần chạy ver5 (train, CV, test). Không chỉnh sau khi thấy kết quả.",
+  "primary_horizon_days": 730,
+  "horizons_days": [
+    365,
+    730,
+    1095
+  ],
+  "label_window_days": 1825,
+  "label_window_rule": "Khớp mô hình trên theo dõi đến 1.825 ngày: khoảng (L, R] giữ nguyên cận gốc khi L < 1.825; L >= 1.825 -> kiểm duyệt tại 1.825. Chân trời đánh giá tối đa 1.095 ngày.",
+  "primary_comparison": "M3 - M2 trên cùng tập mốc đủ biến M3",
+  "delta_auc": 0.02,
+  "nb_margin": 0.01,
+  "nb_core_thresholds": [
+    0.15,
+    0.2,
+    0.25,
+    0.3
+  ],
+  "decision_rule": {
+    "Có giá trị gia tăng": "cận dưới ΔAUC > 0 VÀ ΔAUC >= 0,02 VÀ cận dưới ΔNB_core > 0",
+    "Tương đương": "KTC 95% ΔAUC nằm trong (-0,02; 0,02) VÀ cận trên ΔNB_core <= 0,01",
+    "Bất định": "các trường hợp còn lại"
+  },
+  "reporting_rule": "Báo cáo kết luận riêng cho CV (train 80%) và test 20%. Test là kiểm chứng nội bộ trên phân hoạch ADNI đã dùng ở các phiên bản trước. Khi hai tầng không cùng đạt 'Có giá trị gia tăng', câu tổng kết là: 'Chưa đủ bằng chứng về giá trị gia tăng ổn định của tốc độ MRI'.",
+  "cv": {
+    "folds": 5,
+    "repeats": 20,
+    "split": "theo RID",
+    "lambda_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "inner_folds": 3,
+    "preprocessing": "ICV và tham số BLUP ước lượng trong từng fold (cả vòng trong), chỉ trên RID không thuộc phần đánh giá",
+    "bootstrap": 1000
+  },
+  "mri_series_rule_primary": "cùng phiên bản FreeSurfer và cùng cường độ từ trường; S10: thêm điều kiện cùng hãng/model máy",
+  "mri_same_day_rule": "khác cường độ từ trường: chọn cường độ phổ biến nhất của RID (hòa: 3T); cùng giao thức: lấy trung bình",
+  "clinical_conflict_rule": "RID-ngày có hai giá trị khác nhau: loại số đo đó, ghi conflicts.csv",
+  "demographics_rule": "học vấn và giới lấy bản ghi gần nhất có ngày <= mốc (bỏ mã thiếu âm); RID có giá trị hợp lệ không nhất quán được ghi conflicts.csv và loại ở S7",
+  "imputation_primary": "ca bất định L<h<R: rút T từ M0 (tham chiếu trung lập), 1 lần mỗi lần lặp",
+  "calibration": "Turnbull NPMLE theo 10 nhóm nguy cơ; O/E tổng thể",
+  "sensitivity": {
+    "L1": "kiểm toán rò rỉ: tham số tiền xử lý ước lượng trên toàn train (như ver4)",
+    "S1": "Cox kiểm duyệt phải so với mô hình khoảng",
+    "S2a": "tốc độ hai điểm (v1)",
+    "S2b": "BSI hồi hải mã, ADNIGO/2",
+    "S3": "mốc MCI lần 2",
+    "S4": "Dementia được xác nhận",
+    "S5": "bỏ FAQ",
+    "S6": "gán T cho ca bất định: L, điểm giữa, R, M3",
+    "S7": "loại RID có giới hoặc học vấn không nhất quán",
+    "S8": "độ trễ xử lý MRI: MRI phải có trước mốc >= 1, 7, 30 ngày",
+    "S9": "tuổi MRI: bao phủ 180/365 ngày, hiệu năng theo nhóm tuổi MRI, tương tác HV x tuổi MRI",
+    "S10": "chuỗi MRI cùng hãng/model máy"
+  },
+  "exploratory": "Mọi phân tích độ nhạy và phân nhóm là thăm dò; không dùng để thay kết luận chính.",
+  "amendments": [
+    {
+      "at": "2026-11-25T23:45:00+07:00",
+      "before_any_v5_result": true,
+      "change": "S7: đổi từ \"loại RID có giới không nhất quán\" sang \"loại RID có giới hoặc học vấn không nhất quán (mã hợp lệ)\"",
+      "reason": "Kiểm tra dữ liệu: 45 RID \"khác giới\" đều do mã thiếu -4; sau khi bỏ mã thiếu còn 0 RID khác giới và 95 RID khác học vấn."
+    },
+    {
+      "at": "2026-11-25T23:55:00+07:00",
+      "before_any_v5_result": true,
+      "change": "Cửa sổ khớp mô hình 1.095 -> 1.825 ngày; nguy cơ nền thêm hai khúc 365 ngày và một khúc mở.",
+      "reason": "Nếu chỉ giữ cận phải mà vẫn cắt theo dõi người không biến cố ở 1.095, khúc nguy cơ sau 1.095 không có thời gian phơi nhiễm và suy biến (log-hazard -4,2 trong lần chạy thử kỹ thuật, chưa có chỉ số hiệu năng nào được xem)."
+    }
+  ]
+}
