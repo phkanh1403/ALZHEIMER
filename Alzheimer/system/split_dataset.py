@@ -1,8 +1,8 @@
 """Split the original ADNI dataset into 80% training / 20% test by participant (RID).
 
 The split is frozen in data/partition.csv (4,020 training and 1,006 test participants).
-Participants not listed in partition.csv (present only in auxiliary tables)
-are assigned by a fixed hash: about 20% go to test.
+Participants not listed in partition.csv (present only in auxiliary tables) are assigned by a fixed
+multiplicative hash: about 20% go to test.
 
 Usage:
     python split_dataset.py <original_data_folder> <train_folder> <test_folder>
@@ -14,11 +14,15 @@ import shutil
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+from mci_risk.config import PARTITION_FILE
+
+TEST_PERCENT = 20
+_HASH_MULTIPLIER = 2654435761      # Knuth's multiplicative hash constant
+_COPY_WHOLE = {'DATADIC'}          # dictionaries without participant rows go to both sides
 csv.field_size_limit(min(sys.maxsize, 2**31 - 1))
 
 
-def load_partition(path=ROOT / 'data' / 'partition.csv'):
+def load_partition(path=PARTITION_FILE):
     with open(path, newline='', encoding='utf-8') as f:
         return {int(r['RID']): r['set'] for r in csv.DictReader(f)}
 
@@ -26,7 +30,7 @@ def load_partition(path=ROOT / 'data' / 'partition.csv'):
 def assign(rid, partition):
     if rid in partition:
         return partition[rid]
-    return 'test' if (rid * 2654435761) % 100 < 20 else 'train'
+    return 'test' if (rid * _HASH_MULTIPLIER) % 100 < TEST_PERCENT else 'train'
 
 
 def rid_of(row, header):
@@ -39,45 +43,53 @@ def rid_of(row, header):
     raise KeyError('No RID or subject_id column found')
 
 
+def _split_table(path, outs, partition, seen):
+    with path.open(encoding='latin1', newline='') as src, \
+            outs['train'].open('w', encoding='latin1', newline='') as train, \
+            outs['test'].open('w', encoding='latin1', newline='') as test:
+        reader = csv.reader(src)
+        header = next(reader)
+        writers = {'train': csv.writer(train), 'test': csv.writer(test)}
+        for w in writers.values():
+            w.writerow(header)
+        for row in reader:
+            rid = rid_of(row, header)
+            if rid is None:
+                continue
+            side = assign(rid, partition)
+            seen[side].add(rid)
+            writers[side].writerow(row)
+
+
 def split(source, train, test):
     partition = load_partition()
     for dest in (train, test):
         if dest.exists() and any(dest.iterdir()):
             raise FileExistsError(f'{dest} already exists and is not empty')
-    counts = {'train': set(), 'test': set()}
-    for f in sorted(source.rglob('*.csv')):
-        rel = f.relative_to(source)
-        outs = {k: d / rel for k, d in (('train', train), ('test', test))}
+    seen = {'train': set(), 'test': set()}
+    for path in sorted(source.rglob('*.csv')):
+        rel = path.relative_to(source)
+        outs = {'train': train / rel, 'test': test / rel}
         for p in outs.values():
             p.parent.mkdir(parents=True, exist_ok=True)
-        if f.stem == 'DATADIC':
+        if path.stem in _COPY_WHOLE:
             for p in outs.values():
-                shutil.copyfile(f, p)
-            continue
-        with f.open(encoding='latin1', newline='') as src, \
-                outs['train'].open('w', encoding='latin1', newline='') as a, \
-                outs['test'].open('w', encoding='latin1', newline='') as b:
-            reader = csv.reader(src)
-            header = next(reader)
-            writers = {'train': csv.writer(a), 'test': csv.writer(b)}
-            for w in writers.values():
-                w.writerow(header)
-            for row in reader:
-                rid = rid_of(row, header)
-                if rid is None:
-                    continue
-                side = assign(rid, partition)
-                counts[side].add(rid)
-                writers[side].writerow(row)
-    overlap = counts['train'] & counts['test']
+                shutil.copyfile(path, p)
+        else:
+            _split_table(path, outs, partition, seen)
+    overlap = seen['train'] & seen['test']
     if overlap:
         raise RuntimeError(f'{len(overlap)} participants appear on both sides')
-    print(f"Train: {len(counts['train'])} RID · Test: {len(counts['test'])} RID")
+    print(f"Train: {len(seen['train'])} RID · Test: {len(seen['test'])} RID")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    for key in ['source', 'train', 'test']:
+        parser.add_argument(key, type=Path)
+    args = parser.parse_args()
+    split(args.source, args.train, args.test)
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser()
-    for key in ['source', 'train', 'test']:
-        p.add_argument(key, type=Path)
-    a = p.parse_args()
-    split(a.source, a.train, a.test)
+    main()
