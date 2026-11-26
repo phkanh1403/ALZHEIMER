@@ -1,0 +1,611 @@
+table,RID,day,detail,action
+DXSUM,1200,2010-09-20,conflicting diagnosis labels on the same day,visit removed
+DXSUM,4855,2018-10-30,conflicting diagnosis labels on the same day,visit removed
+FAQ,91,2008-01-14,"FAQTOTAL=[14.0, 15.0]",measurement removed
+ADAS,304,2007-02-15,"TOTAL13=[20.33, 21.33]",measurement removed
+ADAS,1430,2009-10-01,"TOTAL13=[38.67, 42.67]",measurement removed
+UCSFFSX7,30,2006-10-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138580, 118795]",kept 1.5T (most common for this participant)
+UCSFFSX7,30,2007-11-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87493, 85482]",kept 1.5T (most common for this participant)
+UCSFFSX7,31,2006-10-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118846, 118845]",kept 1.5T (most common for this participant)
+UCSFFSX7,31,2007-11-14,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[86359, 83389]",kept 1.5T (most common for this participant)
+UCSFFSX7,31,2008-12-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[132805, 132325]",kept 1.5T (most common for this participant)
+UCSFFSX7,31,2010-12-01,"2 back-to-back scans, same protocol, HV=[6351.0, 6322.0], IMAGEUID=[294743, 294742]",averaged
+UCSFFSX7,31,2013-10-17,"2 back-to-back scans, same protocol, HV=[6154.0, 6399.0], IMAGEUID=[400467, 400468]",averaged
+UCSFFSX7,42,2013-01-23,"2 back-to-back scans, same protocol, HV=[4102.0, 4303.0], IMAGEUID=[363039, 363040]",averaged
+UCSFFSX7,42,2013-11-21,"2 back-to-back scans, same protocol, HV=[4256.0, 4201.0], IMAGEUID=[408387, 408313]",averaged
+UCSFFSX7,51,2012-12-13,"2 back-to-back scans, same protocol, HV=[5469.0, 5640.0], IMAGEUID=[371964, 371976]",averaged
+UCSFFSX7,51,2013-12-10,"2 back-to-back scans, same protocol, HV=[5854.0, 5261.0], IMAGEUID=[408374, 408373]",averaged
+UCSFFSX7,55,2012-05-15,"2 back-to-back scans, same protocol, HV=[7708.0, 7488.0], IMAGEUID=[327085, 327087]",averaged
+UCSFFSX7,55,2013-07-01,"2 back-to-back scans, same protocol, HV=[8185.0, 7699.0], IMAGEUID=[394775, 394776]",averaged
+UCSFFSX7,56,2012-01-20,"2 back-to-back scans, same protocol, HV=[7539.0, 7269.0], IMAGEUID=[298424, 298284]",averaged
+UCSFFSX7,58,2006-12-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[134207, 118852]",kept 1.5T (most common for this participant)
+UCSFFSX7,58,2007-12-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87046, 89591]",kept 1.5T (most common for this participant)
+UCSFFSX7,58,2008-12-09,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[132350, 132341]",kept 1.5T (most common for this participant)
+UCSFFSX7,58,2012-04-02,"2 back-to-back scans, same protocol, HV=[7434.0, 7422.0], IMAGEUID=[296419, 296420]",averaged
+UCSFFSX7,58,2013-12-04,"2 back-to-back scans, same protocol, HV=[7132.0, 6937.0], IMAGEUID=[408380, 408379]",averaged
+UCSFFSX7,59,2012-01-20,"2 back-to-back scans, same protocol, HV=[6813.0, 6777.0], IMAGEUID=[298430, 298429]",averaged
+UCSFFSX7,61,2006-12-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118859, 118858]",kept 1.5T (most common for this participant)
+UCSFFSX7,61,2007-12-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87064, 87055]",kept 1.5T (most common for this participant)
+UCSFFSX7,61,2012-02-07,"2 back-to-back scans, same protocol, HV=[6815.0, 6504.0], IMAGEUID=[294782, 294783]",averaged
+UCSFFSX7,61,2013-02-06,"2 back-to-back scans, same protocol, HV=[6622.0, 6671.0], IMAGEUID=[363041, 363042]",averaged
+UCSFFSX7,61,2013-12-16,"2 back-to-back scans, same protocol, HV=[6511.0, 6582.0], IMAGEUID=[408368, 408309]",averaged
+UCSFFSX7,61,2015-02-12,"2 back-to-back scans, same protocol, HV=[6003.0, 6210.0], IMAGEUID=[477199, 477200]",averaged
+UCSFFSX7,68,2011-01-11,"3 back-to-back scans, same protocol, HV=[6676.0, 6816.0, 6973.0], IMAGEUID=[334115, 334114, 217632]",averaged
+UCSFFSX7,72,2011-01-11,"3 back-to-back scans, same protocol, HV=[7836.0, 7695.0, 7884.0], IMAGEUID=[217935, 376863, 376862]",averaged
+UCSFFSX7,72,2013-01-08,"2 back-to-back scans, same protocol, HV=[7741.0, 7972.0], IMAGEUID=[376865, 376864]",averaged
+UCSFFSX7,72,2014-01-22,"2 back-to-back scans, same protocol, HV=[7769.0, 7646.0], IMAGEUID=[418547, 418546]",averaged
+UCSFFSX7,86,2006-10-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92351, 88141]",kept 1.5T (most common for this participant)
+UCSFFSX7,86,2007-05-01,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[67771, 67781]",kept 1.5T (most common for this participant)
+UCSFFSX7,86,2008-05-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120416, 105937]",kept 1.5T (most common for this participant)
+UCSFFSX7,96,2011-01-31,"2 back-to-back scans, same protocol, HV=[7225.0, 7414.0], IMAGEUID=[293729, 293730]",averaged
+UCSFFSX7,96,2012-02-03,"2 back-to-back scans, same protocol, HV=[7387.0, 7359.0], IMAGEUID=[293732, 293731]",averaged
+UCSFFSX7,101,2012-02-16,"2 back-to-back scans, same protocol, HV=[6381.0, 6221.0], IMAGEUID=[326613, 326612]",averaged
+UCSFFSX7,101,2013-03-25,"2 back-to-back scans, same protocol, HV=[6164.0, 6045.0], IMAGEUID=[369480, 369479]",averaged
+UCSFFSX7,106,2012-01-25,"2 back-to-back scans, same protocol, HV=[7240.0, 7137.0], IMAGEUID=[299338, 299339]",averaged
+UCSFFSX7,106,2013-02-05,"2 back-to-back scans, same protocol, HV=[7273.0, 7320.0], IMAGEUID=[398182, 398181]",averaged
+UCSFFSX7,106,2014-01-28,"2 back-to-back scans, same protocol, HV=[7131.0, 7218.0], IMAGEUID=[431769, 431770]",averaged
+UCSFFSX7,106,2015-02-04,"2 back-to-back scans, same protocol, HV=[6786.0, 6980.0], IMAGEUID=[477193, 477194]",averaged
+UCSFFSX7,113,2012-03-08,"2 back-to-back scans, same protocol, HV=[6765.0, 6724.0], IMAGEUID=[299212, 299211]",averaged
+UCSFFSX7,113,2013-03-05,"2 back-to-back scans, same protocol, HV=[6594.0, 6320.0], IMAGEUID=[379050, 379051]",averaged
+UCSFFSX7,113,2014-03-04,"2 back-to-back scans, same protocol, HV=[6511.0, 6332.0], IMAGEUID=[432157, 432158]",averaged
+UCSFFSX7,120,2012-03-20,"2 back-to-back scans, same protocol, HV=[7268.0, 7264.0], IMAGEUID=[299252, 299251]",averaged
+UCSFFSX7,120,2013-02-25,"2 back-to-back scans, same protocol, HV=[6961.0, 7073.0], IMAGEUID=[410923, 410918]",averaged
+UCSFFSX7,120,2014-04-11,"2 back-to-back scans, same protocol, HV=[7056.0, 7020.0], IMAGEUID=[434266, 434265]",averaged
+UCSFFSX7,120,2015-03-12,"2 back-to-back scans, same protocol, HV=[6891.0, 6878.0], IMAGEUID=[488714, 488713]",averaged
+UCSFFSX7,126,2012-02-09,"2 back-to-back scans, same protocol, HV=[4658.0, 4257.0], IMAGEUID=[294796, 294791]",averaged
+UCSFFSX7,126,2013-04-04,"3 back-to-back scans, same protocol, HV=[5059.0, 4566.0, 5504.0], IMAGEUID=[370021, 370020, 370019]",averaged
+UCSFFSX7,127,2010-04-19,"2 back-to-back scans, same protocol, HV=[6687.0, 6538.0], IMAGEUID=[371587, 204110]",averaged
+UCSFFSX7,127,2012-02-27,"2 back-to-back scans, same protocol, HV=[6694.0, 6941.0], IMAGEUID=[298432, 298431]",averaged
+UCSFFSX7,127,2013-02-27,"2 back-to-back scans, same protocol, HV=[6333.0, 6627.0], IMAGEUID=[364676, 364675]",averaged
+UCSFFSX7,130,2012-05-10,"2 back-to-back scans, same protocol, HV=[7734.0, 7768.0], IMAGEUID=[331850, 331849]",averaged
+UCSFFSX7,130,2013-06-06,"2 back-to-back scans, same protocol, HV=[7588.0, 7625.0], IMAGEUID=[377158, 377157]",averaged
+UCSFFSX7,135,2012-02-14,"2 back-to-back scans, same protocol, HV=[6409.0, 6316.0], IMAGEUID=[299354, 299358]",averaged
+UCSFFSX7,156,2010-02-22,"2 back-to-back scans, same protocol, HV=[7271.0, 7207.0], IMAGEUID=[203393, 364887]",averaged
+UCSFFSX7,156,2011-03-03,"2 back-to-back scans, same protocol, HV=[7338.0, 7223.0], IMAGEUID=[295874, 295873]",averaged
+UCSFFSX7,156,2013-02-20,"2 back-to-back scans, same protocol, HV=[6990.0, 6862.0], IMAGEUID=[363280, 363281]",averaged
+UCSFFSX7,156,2014-03-04,"2 back-to-back scans, same protocol, HV=[6640.0, 6564.0], IMAGEUID=[432145, 432146]",averaged
+UCSFFSX7,159,2011-04-22,"2 back-to-back scans, same protocol, HV=[6941.0, 7025.0], IMAGEUID=[275419, 275421]",averaged
+UCSFFSX7,159,2012-03-05,"3 back-to-back scans, same protocol, HV=[7029.0, 6547.0, 6934.0], IMAGEUID=[299306, 299321, 299323]",averaged
+UCSFFSX7,159,2013-02-27,"3 back-to-back scans, same protocol, HV=[6905.0, 7378.0, 6726.0], IMAGEUID=[369957, 369958, 369959]",averaged
+UCSFFSX7,159,2014-03-12,"2 back-to-back scans, same protocol, HV=[7035.0, 6472.0], IMAGEUID=[434936, 434937]",averaged
+UCSFFSX7,159,2015-03-05,"2 back-to-back scans, same protocol, HV=[7102.0, 6983.0], IMAGEUID=[488736, 488735]",averaged
+UCSFFSX7,160,2011-03-06,"2 back-to-back scans, same protocol, HV=[4466.0, 4496.0], IMAGEUID=[297004, 296995]",averaged
+UCSFFSX7,166,2012-03-01,"2 back-to-back scans, same protocol, HV=[4873.0, 4671.0], IMAGEUID=[299303, 299302]",averaged
+UCSFFSX7,166,2013-02-19,"2 back-to-back scans, same protocol, HV=[4924.0, 4578.0], IMAGEUID=[362898, 362899]",averaged
+UCSFFSX7,166,2014-02-06,"2 back-to-back scans, same protocol, HV=[4500.0, 4841.0], IMAGEUID=[431764, 431763]",averaged
+UCSFFSX7,169,2011-03-03,"2 back-to-back scans, same protocol, HV=[7044.0, 7049.0], IMAGEUID=[293755, 293756]",averaged
+UCSFFSX7,169,2012-02-09,"2 back-to-back scans, same protocol, HV=[6917.0, 6858.0], IMAGEUID=[326642, 326643]",averaged
+UCSFFSX7,172,2011-03-12,"2 back-to-back scans, same protocol, HV=[7381.0, 7468.0], IMAGEUID=[297037, 297038]",averaged
+UCSFFSX7,172,2012-03-25,"2 back-to-back scans, same protocol, HV=[7418.0, 7416.0], IMAGEUID=[415790, 415789]",averaged
+UCSFFSX7,173,2013-02-19,"2 back-to-back scans, same protocol, HV=[6525.0, 6550.0], IMAGEUID=[362896, 362897]",averaged
+UCSFFSX7,173,2014-02-11,"2 back-to-back scans, same protocol, HV=[6488.0, 6919.0], IMAGEUID=[431765, 431766]",averaged
+UCSFFSX7,184,2006-09-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119714, 119713]",kept 3T (most common for this participant)
+UCSFFSX7,184,2009-03-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[148265, 148249]",kept 3T (most common for this participant)
+UCSFFSX7,190,2006-11-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[106190, 94820]",kept 3T (most common for this participant)
+UCSFFSX7,194,2006-10-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[122703, 119719]",kept 3T (most common for this participant)
+UCSFFSX7,194,2007-04-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138885, 66731]",kept 3T (most common for this participant)
+UCSFFSX7,195,2006-10-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119722, 119723]",kept 1.5T (most common for this participant)
+UCSFFSX7,195,2007-09-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[81460, 81453]",kept 1.5T (most common for this participant)
+UCSFFSX7,200,2012-02-17,"2 back-to-back scans, same protocol, HV=[8946.0, 8640.0], IMAGEUID=[300247, 300246]",averaged
+UCSFFSX7,200,2013-03-13,"2 back-to-back scans, same protocol, HV=[8600.0, 8644.0], IMAGEUID=[410996, 410995]",averaged
+UCSFFSX7,200,2014-03-11,"2 back-to-back scans, same protocol, HV=[8955.0, 8718.0], IMAGEUID=[434939, 434938]",averaged
+UCSFFSX7,210,2012-03-22,"2 back-to-back scans, same protocol, HV=[7213.0, 7386.0], IMAGEUID=[298433, 298434]",averaged
+UCSFFSX7,217,2012-05-23,"2 back-to-back scans, same protocol, HV=[6461.0, 4034.0], IMAGEUID=[363044, 363043]",averaged
+UCSFFSX7,225,2012-02-21,"2 back-to-back scans, same protocol, HV=[5215.0, 5296.0], IMAGEUID=[300248, 300249]",averaged
+UCSFFSX7,225,2014-03-07,"2 back-to-back scans, same protocol, HV=[5065.0, 5128.0], IMAGEUID=[432163, 432164]",averaged
+UCSFFSX7,230,2012-01-10,"2 back-to-back scans, same protocol, HV=[5554.0, 5000.0], IMAGEUID=[297606, 297607]",averaged
+UCSFFSX7,230,2013-01-29,"2 back-to-back scans, same protocol, HV=[5306.0, 4646.0], IMAGEUID=[376984, 376983]",averaged
+UCSFFSX7,230,2014-01-14,"2 back-to-back scans, same protocol, HV=[5122.0, 4926.0], IMAGEUID=[431488, 431489]",averaged
+UCSFFSX7,259,2012-04-02,"3 back-to-back scans, same protocol, HV=[5561.0, 5333.0, 5288.0], IMAGEUID=[299242, 299244, 299243]",averaged
+UCSFFSX7,259,2013-04-19,"2 back-to-back scans, same protocol, HV=[5445.0, 5272.0], IMAGEUID=[414577, 414578]",averaged
+UCSFFSX7,259,2014-04-09,"2 back-to-back scans, same protocol, HV=[5113.0, 5296.0], IMAGEUID=[434268, 434267]",averaged
+UCSFFSX7,260,2006-11-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[86120, 88077]",kept 1.5T (most common for this participant)
+UCSFFSX7,260,2007-05-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[63565, 63556]",kept 1.5T (most common for this participant)
+UCSFFSX7,260,2008-05-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[106542, 106551]",kept 1.5T (most common for this participant)
+UCSFFSX7,260,2009-04-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[160153, 151199]",kept 1.5T (most common for this participant)
+UCSFFSX7,260,2013-04-23,"2 back-to-back scans, same protocol, HV=[5700.0, 5760.0], IMAGEUID=[411004, 411002]",averaged
+UCSFFSX7,260,2014-05-08,"2 back-to-back scans, same protocol, HV=[5783.0, 5892.0], IMAGEUID=[432162, 432161]",averaged
+UCSFFSX7,272,2012-04-25,"2 back-to-back scans, same protocol, HV=[7498.0, 7551.0], IMAGEUID=[376986, 376985]",averaged
+UCSFFSX7,272,2013-06-07,"2 back-to-back scans, same protocol, HV=[7303.0, 7516.0], IMAGEUID=[379069, 379067]",averaged
+UCSFFSX7,272,2014-05-29,"2 back-to-back scans, same protocol, HV=[7183.0, 7153.0], IMAGEUID=[432179, 432173]",averaged
+UCSFFSX7,276,2011-04-25,"2 back-to-back scans, same protocol, HV=[8406.0, 8646.0], IMAGEUID=[275423, 275422]",averaged
+UCSFFSX7,276,2012-03-27,"2 back-to-back scans, same protocol, HV=[8220.0, 8239.0], IMAGEUID=[299247, 299248]",averaged
+UCSFFSX7,276,2013-04-02,"2 back-to-back scans, same protocol, HV=[8181.0, 8244.0], IMAGEUID=[369961, 369960]",averaged
+UCSFFSX7,276,2014-04-01,"2 back-to-back scans, same protocol, HV=[8238.0, 8025.0], IMAGEUID=[437685, 437686]",averaged
+UCSFFSX7,276,2015-03-24,"2 back-to-back scans, same protocol, HV=[7822.0, 8035.0], IMAGEUID=[488712, 488711]",averaged
+UCSFFSX7,292,2011-04-20,"2 back-to-back scans, same protocol, HV=[5517.0, 5513.0], IMAGEUID=[295875, 295876]",averaged
+UCSFFSX7,292,2012-04-30,"2 back-to-back scans, same protocol, HV=[5436.0, 5352.0], IMAGEUID=[371216, 371215]",averaged
+UCSFFSX7,292,2013-05-01,"2 back-to-back scans, same protocol, HV=[4935.0, 5104.0], IMAGEUID=[371451, 371452]",averaged
+UCSFFSX7,298,2013-04-24,"2 back-to-back scans, same protocol, HV=[6683.0, 6648.0], IMAGEUID=[369050, 369051]",averaged
+UCSFFSX7,298,2014-04-16,"2 back-to-back scans, same protocol, HV=[6407.0, 6470.0], IMAGEUID=[432160, 432159]",averaged
+UCSFFSX7,303,2007-04-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138806, 62917]",kept 1.5T (most common for this participant)
+UCSFFSX7,303,2009-06-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162548, 160200]",kept 1.5T (most common for this participant)
+UCSFFSX7,303,2011-06-15,"2 back-to-back scans, same protocol, HV=[5430.0, 5762.0], IMAGEUID=[388453, 388452]",averaged
+UCSFFSX7,307,2007-11-14,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[83030, 83021]",kept 1.5T (most common for this participant)
+UCSFFSX7,307,2008-04-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103681, 103672]",kept 1.5T (most common for this participant)
+UCSFFSX7,307,2009-04-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[149535, 148022]",kept 1.5T (most common for this participant)
+UCSFFSX7,307,2012-06-22,"2 back-to-back scans, same protocol, HV=[7670.0, 7333.0], IMAGEUID=[334528, 334529]",averaged
+UCSFFSX7,307,2013-06-20,"2 back-to-back scans, same protocol, HV=[7319.0, 7160.0], IMAGEUID=[394782, 394781]",averaged
+UCSFFSX7,335,2006-11-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118777, 92157]",kept 3T (most common for this participant)
+UCSFFSX7,335,2007-05-22,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118778, 81373]",kept 3T (most common for this participant)
+UCSFFSX7,335,2008-06-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120469, 122856]",kept 3T (most common for this participant)
+UCSFFSX7,337,2011-05-10,"2 back-to-back scans, same protocol, HV=[7280.0, 7223.0], IMAGEUID=[275425, 275424]",averaged
+UCSFFSX7,352,2011-04-04,"2 back-to-back scans, same protocol, HV=[4697.0, 4897.0], IMAGEUID=[297018, 297019]",averaged
+UCSFFSX7,352,2013-04-24,"2 back-to-back scans, same protocol, HV=[4284.0, 4552.0], IMAGEUID=[369043, 369047]",averaged
+UCSFFSX7,352,2014-04-21,"2 back-to-back scans, same protocol, HV=[3436.0, 4210.0], IMAGEUID=[432151, 432152]",averaged
+UCSFFSX7,359,2011-09-29,"2 back-to-back scans, same protocol, HV=[6237.0, 6223.0], IMAGEUID=[293699, 293700]",averaged
+UCSFFSX7,359,2013-09-24,"2 back-to-back scans, same protocol, HV=[6011.0, 6070.0], IMAGEUID=[400457, 400458]",averaged
+UCSFFSX7,361,2011-05-20,"2 back-to-back scans, same protocol, HV=[6763.0, 6772.0], IMAGEUID=[297272, 297271]",averaged
+UCSFFSX7,361,2012-06-05,"2 back-to-back scans, same protocol, HV=[6226.0, 6510.0], IMAGEUID=[415793, 415794]",averaged
+UCSFFSX7,369,2007-04-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118775, 70680]",kept 3T (most common for this participant)
+UCSFFSX7,369,2008-05-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[107779, 106446]",kept 3T (most common for this participant)
+UCSFFSX7,376,2006-10-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118794, 118839]",kept 1.5T (most common for this participant)
+UCSFFSX7,376,2007-03-20,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118851, 118844]",kept 1.5T (most common for this participant)
+UCSFFSX7,376,2007-10-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[81892, 87502]",kept 1.5T (most common for this participant)
+UCSFFSX7,376,2008-04-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103654, 103645]",kept 1.5T (most common for this participant)
+UCSFFSX7,376,2009-05-01,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[151310, 149780]",kept 1.5T (most common for this participant)
+UCSFFSX7,376,2011-04-19,"2 back-to-back scans, same protocol, HV=[5657.0, 5776.0], IMAGEUID=[294801, 294802]",averaged
+UCSFFSX7,377,2012-02-13,"2 back-to-back scans, same protocol, HV=[7040.0, 6847.0], IMAGEUID=[295928, 295927]",averaged
+UCSFFSX7,378,2011-12-06,"2 back-to-back scans, same protocol, HV=[4593.0, 4672.0], IMAGEUID=[297046, 297047]",averaged
+UCSFFSX7,378,2012-12-20,"2 back-to-back scans, same protocol, HV=[4268.0, 4519.0], IMAGEUID=[369077, 369078]",averaged
+UCSFFSX7,378,2013-12-18,"2 back-to-back scans, same protocol, HV=[3964.0, 4390.0], IMAGEUID=[418783, 418784]",averaged
+UCSFFSX7,382,2008-05-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[123767, 109699]",kept 1.5T (most common for this participant)
+UCSFFSX7,382,2009-06-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[160128, 160141]",kept 1.5T (most common for this participant)
+UCSFFSX7,382,2011-06-16,"2 back-to-back scans, same protocol, HV=[7063.0, 7229.0], IMAGEUID=[297274, 297273]",averaged
+UCSFFSX7,382,2012-06-29,"2 back-to-back scans, same protocol, HV=[7006.0, 7056.0], IMAGEUID=[415803, 415804]",averaged
+UCSFFSX7,384,2011-05-03,"2 back-to-back scans, same protocol, HV=[6898.0, 7117.0], IMAGEUID=[297866, 297865]",averaged
+UCSFFSX7,384,2012-05-29,"3 back-to-back scans, same protocol, HV=[6644.0, 6669.0, 6682.0], IMAGEUID=[376947, 376945, 376946]",averaged
+UCSFFSX7,384,2013-04-04,"2 back-to-back scans, same protocol, HV=[6685.0, 6611.0], IMAGEUID=[376948, 376949]",averaged
+UCSFFSX7,388,2006-11-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118864, 118860]",kept 1.5T (most common for this participant)
+UCSFFSX7,388,2007-10-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[81919, 81910]",kept 1.5T (most common for this participant)
+UCSFFSX7,388,2008-04-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103663, 104494]",kept 1.5T (most common for this participant)
+UCSFFSX7,388,2009-04-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[149789, 166912]",kept 1.5T (most common for this participant)
+UCSFFSX7,393,2006-11-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[88086, 101909]",kept 1.5T (most common for this participant)
+UCSFFSX7,393,2007-06-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[63583, 63574]",kept 1.5T (most common for this participant)
+UCSFFSX7,406,2007-06-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118771, 67697]",kept 1.5T (most common for this participant)
+UCSFFSX7,413,2006-11-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118695, 128346]",kept 3T (most common for this participant)
+UCSFFSX7,413,2007-06-01,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[60008, 64551]",kept 3T (most common for this participant)
+UCSFFSX7,413,2008-07-31,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120746, 120917]",kept 3T (most common for this participant)
+UCSFFSX7,416,2012-02-20,"2 back-to-back scans, same protocol, HV=[5454.0, 5430.0], IMAGEUID=[369062, 369066]",averaged
+UCSFFSX7,416,2013-01-08,"2 back-to-back scans, same protocol, HV=[5575.0, 5389.0], IMAGEUID=[369070, 369075]",averaged
+UCSFFSX7,416,2013-12-04,"2 back-to-back scans, same protocol, HV=[5561.0, 5635.0], IMAGEUID=[408381, 408382]",averaged
+UCSFFSX7,419,2012-08-28,"2 back-to-back scans, same protocol, HV=[10768.0, 10780.0], IMAGEUID=[334082, 334078]",averaged
+UCSFFSX7,420,2011-11-09,"2 back-to-back scans, same protocol, HV=[6660.0, 6808.0], IMAGEUID=[300267, 300266]",averaged
+UCSFFSX7,420,2012-12-04,"2 back-to-back scans, same protocol, HV=[6788.0, 6860.0], IMAGEUID=[369602, 369603]",averaged
+UCSFFSX7,423,2007-02-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[88318, 86111]",kept 1.5T (most common for this participant)
+UCSFFSX7,423,2007-08-20,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[75327, 75318]",kept 1.5T (most common for this participant)
+UCSFFSX7,425,2006-12-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[67377, 118767]",kept 3T (most common for this participant)
+UCSFFSX7,425,2007-06-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[65952, 118768]",kept 3T (most common for this participant)
+UCSFFSX7,425,2008-06-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[121440, 120403]",kept 3T (most common for this participant)
+UCSFFSX7,426,2007-06-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[66787, 66778]",kept 3T (most common for this participant)
+UCSFFSX7,429,2006-12-18,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[66801, 66792]",kept 3T (most common for this participant)
+UCSFFSX7,429,2007-06-18,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[66806, 83549]",kept 3T (most common for this participant)
+UCSFFSX7,429,2007-12-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[89809, 88169]",kept 3T (most common for this participant)
+UCSFFSX7,429,2008-06-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120446, 163740]",kept 3T (most common for this participant)
+UCSFFSX7,429,2009-07-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[205562, 174872]",kept 3T (most common for this participant)
+UCSFFSX7,441,2011-05-17,"2 back-to-back scans, same protocol, HV=[6418.0, 6579.0], IMAGEUID=[297867, 297868]",averaged
+UCSFFSX7,441,2012-05-15,"2 back-to-back scans, same protocol, HV=[6696.0, 6726.0], IMAGEUID=[376953, 376954]",averaged
+UCSFFSX7,441,2013-05-07,"2 back-to-back scans, same protocol, HV=[6488.0, 6817.0], IMAGEUID=[377763, 377838]",averaged
+UCSFFSX7,449,2007-02-26,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[81437, 80939]",kept 3T (most common for this participant)
+UCSFFSX7,450,2006-12-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118764, 69469]",kept 3T (most common for this participant)
+UCSFFSX7,450,2007-06-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118765, 76601]",kept 3T (most common for this participant)
+UCSFFSX7,450,2007-12-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87299, 87005]",kept 3T (most common for this participant)
+UCSFFSX7,450,2008-06-09,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[111187, 111192]",kept 3T (most common for this participant)
+UCSFFSX7,467,2012-05-23,"2 back-to-back scans, same protocol, HV=[4864.0, 4942.0], IMAGEUID=[415798, 415797]",averaged
+UCSFFSX7,479,2012-09-17,"2 back-to-back scans, same protocol, HV=[6426.0, 6439.0], IMAGEUID=[370179, 370184]",averaged
+UCSFFSX7,487,2007-06-18,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[80689, 92420]",kept 1.5T (most common for this participant)
+UCSFFSX7,487,2008-06-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[109893, 109718]",kept 1.5T (most common for this participant)
+UCSFFSX7,498,2011-11-15,"2 back-to-back scans, same protocol, HV=[7045.0, 6996.0], IMAGEUID=[291925, 291926]",averaged
+UCSFFSX7,498,2012-10-01,"2 back-to-back scans, same protocol, HV=[7153.0, 7085.0], IMAGEUID=[400490, 400489]",averaged
+UCSFFSX7,501,2007-07-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[72212, 72405]",kept 1.5T (most common for this participant)
+UCSFFSX7,501,2007-12-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[94830, 88549]",kept 1.5T (most common for this participant)
+UCSFFSX7,501,2009-09-23,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[163198, 166898]",kept 1.5T (most common for this participant)
+UCSFFSX7,501,2012-04-18,"3 back-to-back scans, same protocol, HV=[5844.0, 5637.0, 5782.0], IMAGEUID=[299330, 299329, 299328]",averaged
+UCSFFSX7,505,2007-04-09,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[83530, 70867]",kept 3T (most common for this participant)
+UCSFFSX7,505,2007-10-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[83797, 91168]",kept 3T (most common for this participant)
+UCSFFSX7,505,2008-04-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103501, 123398]",kept 3T (most common for this participant)
+UCSFFSX7,507,2006-12-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119148, 119147]",kept 3T (most common for this participant)
+UCSFFSX7,507,2007-06-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119157, 119158]",kept 3T (most common for this participant)
+UCSFFSX7,507,2007-11-27,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119160, 119159, 85542]",kept 3T (most common for this participant)
+UCSFFSX7,507,2007-11-27,"2 back-to-back scans, same protocol, HV=[6041.0, 6044.0], IMAGEUID=[119160, 85542]",averaged
+UCSFFSX7,514,2011-06-08,"2 back-to-back scans, same protocol, HV=[6818.0, 7463.0], IMAGEUID=[275429, 275430]",averaged
+UCSFFSX7,520,2011-06-09,"2 back-to-back scans, same protocol, HV=[7948.0, 7920.0], IMAGEUID=[293677, 293676]",averaged
+UCSFFSX7,520,2013-05-08,"3 back-to-back scans, same protocol, HV=[7525.0, 7520.0, 7977.0], IMAGEUID=[377074, 377073, 377075]",averaged
+UCSFFSX7,522,2014-01-27,"2 back-to-back scans, same protocol, HV=[7445.0, 7438.0], IMAGEUID=[431774, 431773]",averaged
+UCSFFSX7,528,2008-05-21,"2 back-to-back scans, same protocol, HV=[4593.0, 4389.0], IMAGEUID=[439326, 439325]",averaged
+UCSFFSX7,545,2012-05-30,"2 back-to-back scans, same protocol, HV=[7412.0, 7484.0], IMAGEUID=[376989, 376996]",averaged
+UCSFFSX7,545,2013-06-14,"2 back-to-back scans, same protocol, HV=[7597.0, 7134.0], IMAGEUID=[394779, 394780]",averaged
+UCSFFSX7,546,2011-11-18,"2 back-to-back scans, same protocol, HV=[7540.0, 7518.0], IMAGEUID=[291909, 291910]",averaged
+UCSFFSX7,546,2012-11-06,"2 back-to-back scans, same protocol, HV=[7502.0, 7121.0], IMAGEUID=[369179, 369180]",averaged
+UCSFFSX7,546,2013-11-25,"2 back-to-back scans, same protocol, HV=[6765.0, 6762.0], IMAGEUID=[400476, 400475]",averaged
+UCSFFSX7,548,2012-06-26,"2 back-to-back scans, same protocol, HV=[6582.0, 6503.0], IMAGEUID=[326657, 326653]",averaged
+UCSFFSX7,552,2011-06-17,"2 back-to-back scans, same protocol, HV=[5723.0, 6182.0], IMAGEUID=[295933, 295934]",averaged
+UCSFFSX7,555,2011-12-07,"2 back-to-back scans, same protocol, HV=[7778.0, 7992.0], IMAGEUID=[295910, 295905]",averaged
+UCSFFSX7,555,2012-12-11,"2 back-to-back scans, same protocol, HV=[7793.0, 7674.0], IMAGEUID=[371234, 371235]",averaged
+UCSFFSX7,559,2008-08-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120779, 120949]",kept 3T (most common for this participant)
+UCSFFSX7,559,2009-06-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[171087, 171078]",kept 3T (most common for this participant)
+UCSFFSX7,604,2006-12-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118992, 119009]",kept 1.5T (most common for this participant)
+UCSFFSX7,604,2007-06-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119006, 119005]",kept 1.5T (most common for this participant)
+UCSFFSX7,604,2007-12-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87073, 88040]",kept 1.5T (most common for this participant)
+UCSFFSX7,604,2008-07-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120798, 123861]",kept 1.5T (most common for this participant)
+UCSFFSX7,604,2009-07-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162265, 162296]",kept 1.5T (most common for this participant)
+UCSFFSX7,605,2007-06-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[72858, 72864]",kept 1.5T (most common for this participant)
+UCSFFSX7,605,2008-06-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120562, 123328]",kept 1.5T (most common for this participant)
+UCSFFSX7,605,2013-06-26,"2 back-to-back scans, same protocol, HV=[7486.0, 7489.0], IMAGEUID=[394783, 394784]",averaged
+UCSFFSX7,606,2007-01-31,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[48923, 48918]",kept 3T (most common for this participant)
+UCSFFSX7,606,2007-07-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[72873, 85706]",kept 3T (most common for this participant)
+UCSFFSX7,607,2007-08-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[74353, 138844]",kept 3T (most common for this participant)
+UCSFFSX7,607,2008-05-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[133472, 105369]",kept 3T (most common for this participant)
+UCSFFSX7,607,2008-11-14,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[133882, 133494]",kept 3T (most common for this participant)
+UCSFFSX7,610,2011-11-29,"2 back-to-back scans, same protocol, HV=[5700.0, 5989.0], IMAGEUID=[291919, 291920]",averaged
+UCSFFSX7,610,2013-11-21,"2 back-to-back scans, same protocol, HV=[5876.0, 6050.0], IMAGEUID=[400474, 400473]",averaged
+UCSFFSX7,610,2014-11-24,"2 back-to-back scans, same protocol, HV=[5440.0, 5779.0], IMAGEUID=[467253, 467252]",averaged
+UCSFFSX7,611,2009-08-14,"2 back-to-back scans, same protocol, HV=[5184.0, 5178.0], IMAGEUID=[439340, 439365]",averaged
+UCSFFSX7,618,2011-06-27,"2 back-to-back scans, same protocol, HV=[7935.0, 7988.0], IMAGEUID=[274705, 274706]",averaged
+UCSFFSX7,618,2012-06-20,"2 back-to-back scans, same protocol, HV=[7900.0, 8050.0], IMAGEUID=[370059, 370058]",averaged
+UCSFFSX7,618,2013-07-03,"2 back-to-back scans, same protocol, HV=[8230.0, 7990.0], IMAGEUID=[394805, 394804]",averaged
+UCSFFSX7,622,2006-12-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[91113, 86188]",kept 1.5T (most common for this participant)
+UCSFFSX7,622,2007-06-27,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[72352, 72343]",kept 1.5T (most common for this participant)
+UCSFFSX7,622,2008-06-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[123355, 120580]",kept 1.5T (most common for this participant)
+UCSFFSX7,622,2009-06-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162947, 162938]",kept 1.5T (most common for this participant)
+UCSFFSX7,625,2007-02-27,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[101445, 118998]",kept 3T (most common for this participant)
+UCSFFSX7,625,2007-07-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[73073, 73333]",kept 3T (most common for this participant)
+UCSFFSX7,625,2008-01-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[89607, 90880]",kept 3T (most common for this participant)
+UCSFFSX7,625,2009-10-20,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162301, 218559]",kept 3T (most common for this participant)
+UCSFFSX7,626,2012-08-01,"3 back-to-back scans, same protocol, HV=[5932.0, 5656.0, 5581.0], IMAGEUID=[334505, 334503, 334501]",averaged
+UCSFFSX7,626,2013-08-06,"2 back-to-back scans, same protocol, HV=[5899.0, 5730.0], IMAGEUID=[416012, 416011]",averaged
+UCSFFSX7,626,2014-08-19,"2 back-to-back scans, same protocol, HV=[5570.0, 5616.0], IMAGEUID=[467247, 467246]",averaged
+UCSFFSX7,633,2007-01-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[79139, 128360]",kept 3T (most common for this participant)
+UCSFFSX7,633,2007-07-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[71451, 73053]",kept 3T (most common for this participant)
+UCSFFSX7,667,2011-10-16,"2 back-to-back scans, same protocol, HV=[7678.0, 7736.0], IMAGEUID=[297012, 297013]",averaged
+UCSFFSX7,671,2011-06-27,"2 back-to-back scans, same protocol, HV=[5140.0, 4951.0], IMAGEUID=[296517, 296518]",averaged
+UCSFFSX7,671,2012-07-09,"2 back-to-back scans, same protocol, HV=[4672.0, 4773.0], IMAGEUID=[322466, 322465]",averaged
+UCSFFSX7,677,2007-07-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[73347, 119104]",kept 1.5T (most common for this participant)
+UCSFFSX7,677,2008-08-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[120479, 123872]",kept 1.5T (most common for this participant)
+UCSFFSX7,677,2012-09-24,"2 back-to-back scans, same protocol, HV=[8194.0, 8165.0], IMAGEUID=[400494, 400493]",averaged
+UCSFFSX7,677,2013-09-30,"2 back-to-back scans, same protocol, HV=[8151.0, 7851.0], IMAGEUID=[432188, 432187]",averaged
+UCSFFSX7,679,2010-08-10,"2 back-to-back scans, same protocol, HV=[8052.0, 7956.0], IMAGEUID=[371302, 203742]",averaged
+UCSFFSX7,679,2011-07-27,"2 back-to-back scans, same protocol, HV=[8057.0, 7910.0], IMAGEUID=[295937, 295938]",averaged
+UCSFFSX7,679,2012-07-18,"2 back-to-back scans, same protocol, HV=[7822.0, 7583.0], IMAGEUID=[371347, 371331]",averaged
+UCSFFSX7,679,2013-07-15,"2 back-to-back scans, same protocol, HV=[7809.0, 8000.0], IMAGEUID=[394809, 394808]",averaged
+UCSFFSX7,680,2013-07-10,"2 back-to-back scans, same protocol, HV=[6266.0, 6302.0], IMAGEUID=[394806, 394807]",averaged
+UCSFFSX7,689,2007-01-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118740, 59190]",kept 3T (most common for this participant)
+UCSFFSX7,689,2007-07-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[74659, 118754]",kept 3T (most common for this participant)
+UCSFFSX7,702,2011-08-29,"2 back-to-back scans, same protocol, HV=[5258.0, 5476.0], IMAGEUID=[293702, 293701]",averaged
+UCSFFSX7,702,2013-05-09,"2 back-to-back scans, same protocol, HV=[5950.0, 6113.0], IMAGEUID=[377040, 377041]",averaged
+UCSFFSX7,709,2010-08-11,"2 back-to-back scans, same protocol, HV=[7400.0, 7461.0], IMAGEUID=[440503, 440504]",averaged
+UCSFFSX7,709,2013-08-21,"2 back-to-back scans, same protocol, HV=[6594.0, 6447.0], IMAGEUID=[394799, 394800]",averaged
+UCSFFSX7,717,2011-10-01,"2 back-to-back scans, same protocol, HV=[8418.0, 8401.0], IMAGEUID=[297880, 297879]",averaged
+UCSFFSX7,717,2012-08-30,"2 back-to-back scans, same protocol, HV=[8204.0, 8024.0], IMAGEUID=[369091, 369098]",averaged
+UCSFFSX7,729,2007-09-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[78663, 78654]",kept 1.5T (most common for this participant)
+UCSFFSX7,729,2008-09-29,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[124008, 123994]",kept 1.5T (most common for this participant)
+UCSFFSX7,731,2011-11-17,"2 back-to-back scans, same protocol, HV=[7369.0, 7480.0], IMAGEUID=[293752, 293751]",averaged
+UCSFFSX7,731,2012-09-25,"2 back-to-back scans, same protocol, HV=[7336.0, 7370.0], IMAGEUID=[400492, 400491]",averaged
+UCSFFSX7,734,2010-08-04,"2 back-to-back scans, same protocol, HV=[7036.0, 7101.0], IMAGEUID=[370631, 217906]",averaged
+UCSFFSX7,734,2012-08-02,"2 back-to-back scans, same protocol, HV=[7350.0, 7687.0], IMAGEUID=[370656, 370666]",averaged
+UCSFFSX7,734,2013-08-30,"2 back-to-back scans, same protocol, HV=[7137.0, 7276.0], IMAGEUID=[400450, 400451]",averaged
+UCSFFSX7,741,2012-07-31,"2 back-to-back scans, same protocol, HV=[4972.0, 5090.0], IMAGEUID=[370676, 370688]",averaged
+UCSFFSX7,741,2013-08-29,"2 back-to-back scans, same protocol, HV=[4777.0, 4842.0], IMAGEUID=[394803, 394802]",averaged
+UCSFFSX7,752,2007-08-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[74419, 91085]",kept 1.5T (most common for this participant)
+UCSFFSX7,752,2011-09-01,"2 back-to-back scans, same protocol, HV=[4643.0, 4502.0], IMAGEUID=[297277, 297278]",averaged
+UCSFFSX7,802,2012-11-13,"2 back-to-back scans, same protocol, HV=[6509.0, 6555.0], IMAGEUID=[349724, 349723]",averaged
+UCSFFSX7,824,2013-10-03,"2 back-to-back scans, same protocol, HV=[5398.0, 5644.0], IMAGEUID=[400459, 400460]",averaged
+UCSFFSX7,830,2007-09-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92444, 79908]",kept 1.5T (most common for this participant)
+UCSFFSX7,830,2008-03-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[102502, 102495]",kept 1.5T (most common for this participant)
+UCSFFSX7,830,2008-09-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[124115, 134801]",kept 1.5T (most common for this participant)
+UCSFFSX7,830,2009-09-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162425, 162428]",kept 1.5T (most common for this participant)
+UCSFFSX7,835,2012-09-20,"2 back-to-back scans, same protocol, HV=[5743.0, 5435.0], IMAGEUID=[400498, 400497]",averaged
+UCSFFSX7,844,2007-05-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[63619, 67261]",kept 3T (most common for this participant)
+UCSFFSX7,844,2007-10-26,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[82642, 82651]",kept 3T (most common for this participant)
+UCSFFSX7,844,2008-11-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[129620, 129629]",kept 3T (most common for this participant)
+UCSFFSX7,862,2008-10-15,"2 back-to-back scans, same protocol, HV=[5566.0, 5777.0], IMAGEUID=[437409, 436816]",averaged
+UCSFFSX7,863,2010-01-15,"2 back-to-back scans, same protocol, HV=[6432.0, 6182.0], IMAGEUID=[439330, 439329]",averaged
+UCSFFSX7,863,2011-11-03,"2 back-to-back scans, same protocol, HV=[5879.0, 6198.0], IMAGEUID=[299255, 299256]",averaged
+UCSFFSX7,867,2012-09-20,"2 back-to-back scans, same protocol, HV=[7171.0, 6829.0], IMAGEUID=[400993, 400499]",averaged
+UCSFFSX7,867,2013-09-16,"2 back-to-back scans, same protocol, HV=[6806.0, 6567.0], IMAGEUID=[400454, 400453]",averaged
+UCSFFSX7,886,2007-04-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[66332, 65514]",kept 1.5T (most common for this participant)
+UCSFFSX7,886,2008-10-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[124170, 124165]",kept 1.5T (most common for this participant)
+UCSFFSX7,896,2011-11-28,"2 back-to-back scans, same protocol, HV=[6131.0, 6179.0], IMAGEUID=[297270, 297269]",averaged
+UCSFFSX7,907,2012-01-23,"2 back-to-back scans, same protocol, HV=[5851.0, 6110.0], IMAGEUID=[291891, 291890]",averaged
+UCSFFSX7,907,2013-03-27,"2 back-to-back scans, same protocol, HV=[5948.0, 6080.0], IMAGEUID=[392353, 392362]",averaged
+UCSFFSX7,915,2012-03-07,"2 back-to-back scans, same protocol, HV=[4027.0, 3947.0], IMAGEUID=[349714, 349715]",averaged
+UCSFFSX7,916,2007-04-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118884, 118881]",kept 3T (most common for this participant)
+UCSFFSX7,916,2007-09-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[80152, 89743]",kept 3T (most common for this participant)
+UCSFFSX7,916,2008-09-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[124097, 124083]",kept 3T (most common for this participant)
+UCSFFSX7,919,2011-11-14,"2 back-to-back scans, same protocol, HV=[7814.0, 7855.0], IMAGEUID=[296589, 296588]",averaged
+UCSFFSX7,920,2012-10-05,"2 back-to-back scans, same protocol, HV=[5047.0, 5180.0], IMAGEUID=[377484, 377483]",averaged
+UCSFFSX7,920,2013-10-17,"2 back-to-back scans, same protocol, HV=[4962.0, 4935.0], IMAGEUID=[400465, 400466]",averaged
+UCSFFSX7,920,2014-11-05,"2 back-to-back scans, same protocol, HV=[3888.0, 4523.0], IMAGEUID=[467250, 467251]",averaged
+UCSFFSX7,923,2012-10-03,"2 back-to-back scans, same protocol, HV=[8108.0, 8222.0], IMAGEUID=[400488, 400487]",averaged
+UCSFFSX7,923,2013-10-25,"2 back-to-back scans, same protocol, HV=[8405.0, 8102.0], IMAGEUID=[400469, 400470]",averaged
+UCSFFSX7,923,2014-10-13,"2 back-to-back scans, same protocol, HV=[7842.0, 7907.0], IMAGEUID=[467249, 467248]",averaged
+UCSFFSX7,925,2012-11-14,"2 back-to-back scans, same protocol, HV=[5914.0, 5995.0], IMAGEUID=[400479, 400480]",averaged
+UCSFFSX7,925,2013-11-13,"2 back-to-back scans, same protocol, HV=[6660.0, 6153.0], IMAGEUID=[402023, 402022]",averaged
+UCSFFSX7,925,2014-11-20,"2 back-to-back scans, same protocol, HV=[5751.0, 6167.0], IMAGEUID=[468870, 468869]",averaged
+UCSFFSX7,926,2007-04-03,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118902, 118901]",kept 1.5T (most common for this participant)
+UCSFFSX7,926,2007-10-23,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[82180, 81937]",kept 1.5T (most common for this participant)
+UCSFFSX7,926,2008-10-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[125020, 125029]",kept 1.5T (most common for this participant)
+UCSFFSX7,926,2009-10-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162328, 162319]",kept 1.5T (most common for this participant)
+UCSFFSX7,926,2011-11-17,"2 back-to-back scans, same protocol, HV=[6735.0, 6619.0], IMAGEUID=[294810, 294813]",averaged
+UCSFFSX7,926,2013-01-10,"2 back-to-back scans, same protocol, HV=[6527.0, 6528.0], IMAGEUID=[363048, 363047]",averaged
+UCSFFSX7,926,2013-10-10,"2 back-to-back scans, same protocol, HV=[6189.0, 6231.0], IMAGEUID=[400463, 400464]",averaged
+UCSFFSX7,934,2012-11-06,"2 back-to-back scans, same protocol, HV=[6906.0, 6922.0], IMAGEUID=[369384, 369383]",averaged
+UCSFFSX7,951,2011-11-08,"2 back-to-back scans, same protocol, HV=[7030.0, 7054.0], IMAGEUID=[296526, 296527]",averaged
+UCSFFSX7,952,2011-11-08,"3 back-to-back scans, same protocol, HV=[4864.0, 4989.0, 5171.0], IMAGEUID=[296537, 296538, 296539]",averaged
+UCSFFSX7,954,2007-05-03,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[67147, 62368]",kept 1.5T (most common for this participant)
+UCSFFSX7,956,2007-04-16,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[83806, 63725]",kept 3T (most common for this participant)
+UCSFFSX7,956,2007-11-01,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[82700, 82691]",kept 3T (most common for this participant)
+UCSFFSX7,963,2008-11-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[129286, 129277]",kept 3T (most common for this participant)
+UCSFFSX7,963,2009-10-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[162337, 162346]",kept 3T (most common for this participant)
+UCSFFSX7,969,2007-05-07,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[63743, 63738]",kept 3T (most common for this participant)
+UCSFFSX7,969,2007-11-07,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92363, 86004]",kept 3T (most common for this participant)
+UCSFFSX7,981,2012-03-29,"2 back-to-back scans, same protocol, HV=[6216.0, 6486.0], IMAGEUID=[298278, 298276]",averaged
+UCSFFSX7,981,2014-04-15,"2 back-to-back scans, same protocol, HV=[5958.0, 6003.0], IMAGEUID=[432133, 432134]",averaged
+UCSFFSX7,984,2010-12-03,"2 back-to-back scans, same protocol, HV=[7318.0, 7766.0], IMAGEUID=[300276, 300275]",averaged
+UCSFFSX7,984,2012-12-11,"2 back-to-back scans, same protocol, HV=[7881.0, 7843.0], IMAGEUID=[369969, 369981]",averaged
+UCSFFSX7,984,2013-12-18,"2 back-to-back scans, same protocol, HV=[8201.0, 7930.0], IMAGEUID=[414465, 414464]",averaged
+UCSFFSX7,989,2011-12-06,"2 back-to-back scans, same protocol, HV=[6434.0, 6378.0], IMAGEUID=[296991, 296992]",averaged
+UCSFFSX7,989,2012-06-29,"2 back-to-back scans, same protocol, HV=[6049.0, 6122.0], IMAGEUID=[415802, 415801]",averaged
+UCSFFSX7,1009,2007-05-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[118752, 71351]",kept 3T (most common for this participant)
+UCSFFSX7,1014,2009-01-22,"2 back-to-back scans, same protocol, HV=[8027.0, 8093.0], IMAGEUID=[435937, 435936]",averaged
+UCSFFSX7,1016,2013-12-04,"2 back-to-back scans, same protocol, HV=[6692.0, 6694.0], IMAGEUID=[408383, 408384]",averaged
+UCSFFSX7,1032,2013-12-04,"2 back-to-back scans, same protocol, HV=[5355.0, 5004.0], IMAGEUID=[408385, 408386]",averaged
+UCSFFSX7,1034,2011-12-09,"2 back-to-back scans, same protocol, HV=[7546.0, 7581.0], IMAGEUID=[297039, 297040]",averaged
+UCSFFSX7,1043,2010-01-15,"2 back-to-back scans, same protocol, HV=[6531.0, 6511.0], IMAGEUID=[439322, 439323]",averaged
+UCSFFSX7,1045,2012-11-20,"2 back-to-back scans, same protocol, HV=[4773.0, 4850.0], IMAGEUID=[349711, 349712]",averaged
+UCSFFSX7,1045,2014-02-14,"2 back-to-back scans, same protocol, HV=[4731.0, 4697.0], IMAGEUID=[432143, 432144]",averaged
+UCSFFSX7,1045,2014-12-23,"2 back-to-back scans, same protocol, HV=[4764.0, 4585.0], IMAGEUID=[477192, 477191]",averaged
+UCSFFSX7,1046,2007-11-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[88270, 83012]",kept 1.5T (most common for this participant)
+UCSFFSX7,1046,2008-05-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[109492, 109497]",kept 1.5T (most common for this participant)
+UCSFFSX7,1046,2009-01-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[139042, 138011]",kept 1.5T (most common for this participant)
+UCSFFSX7,1046,2009-11-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[163041, 162363]",kept 1.5T (most common for this participant)
+UCSFFSX7,1046,2011-12-21,"2 back-to-back scans, same protocol, HV=[8177.0, 7510.0], IMAGEUID=[300280, 300281]",averaged
+UCSFFSX7,1052,2013-01-16,"2 back-to-back scans, same protocol, HV=[5898.0, 6147.0], IMAGEUID=[369057, 369055]",averaged
+UCSFFSX7,1066,2007-05-29,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92682, 71516]",kept 1.5T (most common for this participant)
+UCSFFSX7,1066,2008-06-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[111257, 111236]",kept 1.5T (most common for this participant)
+UCSFFSX7,1066,2009-12-07,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[203376, 165309]",kept 1.5T (most common for this participant)
+UCSFFSX7,1066,2013-01-02,"2 back-to-back scans, same protocol, HV=[4409.0, 4746.0], IMAGEUID=[370062, 370063]",averaged
+UCSFFSX7,1072,2012-10-17,"2 back-to-back scans, same protocol, HV=[8227.0, 8404.0], IMAGEUID=[400481, 400482]",averaged
+UCSFFSX7,1072,2013-12-09,"2 back-to-back scans, same protocol, HV=[8222.0, 8265.0], IMAGEUID=[408377, 408378]",averaged
+UCSFFSX7,1072,2015-02-12,"2 back-to-back scans, same protocol, HV=[8146.0, 8180.0], IMAGEUID=[477198, 477197]",averaged
+UCSFFSX7,1074,2013-07-29,"2 back-to-back scans, same protocol, HV=[4630.0, 4927.0], IMAGEUID=[394778, 394777]",averaged
+UCSFFSX7,1088,2007-07-18,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138858, 69724]",kept 1.5T (most common for this participant)
+UCSFFSX7,1088,2008-02-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[91990, 91985]",kept 1.5T (most common for this participant)
+UCSFFSX7,1092,2007-12-17,"2 back-to-back scans, same protocol, HV=[6716.0, 6785.0], IMAGEUID=[436812, 436813]",averaged
+UCSFFSX7,1097,2012-01-17,"2 back-to-back scans, same protocol, HV=[5369.0, 5156.0], IMAGEUID=[293741, 293739]",averaged
+UCSFFSX7,1106,2012-12-06,"2 back-to-back scans, same protocol, HV=[5144.0, 5513.0], IMAGEUID=[369080, 369079]",averaged
+UCSFFSX7,1106,2013-12-10,"2 back-to-back scans, same protocol, HV=[5654.0, 5557.0], IMAGEUID=[408376, 408375]",averaged
+UCSFFSX7,1118,2012-02-24,"2 back-to-back scans, same protocol, HV=[5382.0, 5329.0], IMAGEUID=[368965, 368966]",averaged
+UCSFFSX7,1118,2013-01-29,"2 back-to-back scans, same protocol, HV=[5326.0, 5245.0], IMAGEUID=[368970, 369054]",averaged
+UCSFFSX7,1118,2014-02-04,"2 back-to-back scans, same protocol, HV=[5082.0, 5340.0], IMAGEUID=[431768, 431767]",averaged
+UCSFFSX7,1123,2012-08-29,"2 back-to-back scans, same protocol, HV=[5804.0, 5800.0], IMAGEUID=[371568, 371567]",averaged
+UCSFFSX7,1123,2013-10-03,"2 back-to-back scans, same protocol, HV=[5349.0, 5432.0], IMAGEUID=[461136, 461135]",averaged
+UCSFFSX7,1123,2015-02-18,"2 back-to-back scans, same protocol, HV=[5037.0, 5215.0], IMAGEUID=[477201, 477202]",averaged
+UCSFFSX7,1126,2007-11-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[87086, 94863]",kept 3T (most common for this participant)
+UCSFFSX7,1126,2008-06-18,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[112230, 112221]",kept 3T (most common for this participant)
+UCSFFSX7,1126,2009-02-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[136193, 138025]",kept 3T (most common for this participant)
+UCSFFSX7,1130,2012-03-19,"2 back-to-back scans, same protocol, HV=[4262.0, 4339.0], IMAGEUID=[298279, 298280]",averaged
+UCSFFSX7,1169,2007-08-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[119119, 75042]",kept 1.5T (most common for this participant)
+UCSFFSX7,1169,2008-01-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[94476, 96300]",kept 1.5T (most common for this participant)
+UCSFFSX7,1169,2009-01-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[141230, 141216]",kept 1.5T (most common for this participant)
+UCSFFSX7,1169,2013-02-04,"2 back-to-back scans, same protocol, HV=[5702.0, 5484.0], IMAGEUID=[370198, 370191]",averaged
+UCSFFSX7,1169,2014-01-24,"2 back-to-back scans, same protocol, HV=[5552.0, 5782.0], IMAGEUID=[431757, 431758]",averaged
+UCSFFSX7,1187,2013-02-13,"2 back-to-back scans, same protocol, HV=[6696.0, 6747.0], IMAGEUID=[376899, 376898]",averaged
+UCSFFSX7,1187,2014-01-29,"2 back-to-back scans, same protocol, HV=[6490.0, 6581.0], IMAGEUID=[431772, 431771]",averaged
+UCSFFSX7,1190,2007-07-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[73338, 73600]",kept 1.5T (most common for this participant)
+UCSFFSX7,1190,2008-01-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[89612, 88372]",kept 1.5T (most common for this participant)
+UCSFFSX7,1190,2009-01-15,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138050, 138005]",kept 1.5T (most common for this participant)
+UCSFFSX7,1190,2014-02-19,"2 back-to-back scans, same protocol, HV=[7284.0, 7123.0], IMAGEUID=[432142, 432141]",averaged
+UCSFFSX7,1206,2007-08-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[75029, 74645]",kept 1.5T (most common for this participant)
+UCSFFSX7,1206,2008-02-22,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[96025, 96034]",kept 1.5T (most common for this participant)
+UCSFFSX7,1206,2009-02-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[140777, 140782]",kept 1.5T (most common for this participant)
+UCSFFSX7,1206,2012-02-16,"2 back-to-back scans, same protocol, HV=[7549.0, 7649.0], IMAGEUID=[326626, 326629]",averaged
+UCSFFSX7,1206,2013-02-20,"2 back-to-back scans, same protocol, HV=[7557.0, 7622.0], IMAGEUID=[369481, 369482]",averaged
+UCSFFSX7,1206,2014-01-21,"2 back-to-back scans, same protocol, HV=[7566.0, 7424.0], IMAGEUID=[412265, 412264]",averaged
+UCSFFSX7,1209,2007-07-26,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[76658, 90934]",kept 3T (most common for this participant)
+UCSFFSX7,1209,2008-02-08,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92194, 92205]",kept 3T (most common for this participant)
+UCSFFSX7,1209,2009-02-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[142001, 149454]",kept 3T (most common for this participant)
+UCSFFSX7,1222,2007-08-28,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[77017, 77008]",kept 1.5T (most common for this participant)
+UCSFFSX7,1222,2008-02-22,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[96047, 96052]",kept 1.5T (most common for this participant)
+UCSFFSX7,1222,2009-02-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[140800, 140791]",kept 1.5T (most common for this participant)
+UCSFFSX7,1222,2012-04-20,"2 back-to-back scans, same protocol, HV=[6549.0, 6420.0], IMAGEUID=[326473, 326474]",averaged
+UCSFFSX7,1222,2013-03-11,"2 back-to-back scans, same protocol, HV=[6565.0, 6516.0], IMAGEUID=[369484, 369483]",averaged
+UCSFFSX7,1222,2014-02-24,"2 back-to-back scans, same protocol, HV=[6349.0, 6224.0], IMAGEUID=[432136, 432135]",averaged
+UCSFFSX7,1225,2007-08-20,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[86395, 74315]",kept 1.5T (most common for this participant)
+UCSFFSX7,1225,2008-02-11,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92547, 91708]",kept 1.5T (most common for this participant)
+UCSFFSX7,1227,2008-03-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[99279, 99265]",kept 3T (most common for this participant)
+UCSFFSX7,1227,2008-09-29,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[205567, 134215]",kept 3T (most common for this participant)
+UCSFFSX7,1227,2009-03-23,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[147855, 143856]",kept 3T (most common for this participant)
+UCSFFSX7,1232,2007-08-01,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[91096, 72838]",kept 1.5T (most common for this participant)
+UCSFFSX7,1232,2008-01-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[91912, 91905]",kept 1.5T (most common for this participant)
+UCSFFSX7,1232,2009-02-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[136230, 142425]",kept 1.5T (most common for this participant)
+UCSFFSX7,1232,2012-02-10,"2 back-to-back scans, same protocol, HV=[6883.0, 7012.0], IMAGEUID=[297284, 297283]",averaged
+UCSFFSX7,1232,2013-02-12,"2 back-to-back scans, same protocol, HV=[7002.0, 6946.0], IMAGEUID=[411288, 411287]",averaged
+UCSFFSX7,1232,2014-02-27,"2 back-to-back scans, same protocol, HV=[6577.0, 6620.0], IMAGEUID=[432154, 432153]",averaged
+UCSFFSX7,1242,2012-07-05,"2 back-to-back scans, same protocol, HV=[6840.0, 6843.0], IMAGEUID=[377002, 377001]",averaged
+UCSFFSX7,1243,2012-03-08,"2 back-to-back scans, same protocol, HV=[4489.0, 4466.0], IMAGEUID=[298438, 298437]",averaged
+UCSFFSX7,1243,2013-03-05,"2 back-to-back scans, same protocol, HV=[4347.0, 4472.0], IMAGEUID=[376858, 376859]",averaged
+UCSFFSX7,1246,2013-03-13,"2 back-to-back scans, same protocol, HV=[7677.0, 7815.0], IMAGEUID=[376941, 376940]",averaged
+UCSFFSX7,1249,2007-08-22,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[80693, 80700]",kept 1.5T (most common for this participant)
+UCSFFSX7,1249,2008-02-06,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[99187, 91921]",kept 1.5T (most common for this participant)
+UCSFFSX7,1249,2009-02-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[135806, 139325]",kept 1.5T (most common for this participant)
+UCSFFSX7,1249,2010-02-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[172374, 172367]",kept 1.5T (most common for this participant)
+UCSFFSX7,1249,2012-02-16,"2 back-to-back scans, same protocol, HV=[6013.0, 6084.0], IMAGEUID=[298441, 298442]",averaged
+UCSFFSX7,1249,2013-02-20,"2 back-to-back scans, same protocol, HV=[5882.0, 5897.0], IMAGEUID=[362888, 362895]",averaged
+UCSFFSX7,1249,2014-02-20,"2 back-to-back scans, same protocol, HV=[5648.0, 5506.0], IMAGEUID=[432156, 432155]",averaged
+UCSFFSX7,1250,2014-05-16,"2 back-to-back scans, same protocol, HV=[6986.0, 7017.0], IMAGEUID=[444083, 444084]",averaged
+UCSFFSX7,1253,2007-09-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[80298, 80303]",kept 3T (most common for this participant)
+UCSFFSX7,1255,2012-03-17,"2 back-to-back scans, same protocol, HV=[4781.0, 4793.0], IMAGEUID=[368979, 368980]",averaged
+UCSFFSX7,1256,2011-04-21,"2 back-to-back scans, same protocol, HV=[6541.0, 6581.0], IMAGEUID=[296808, 296809]",averaged
+UCSFFSX7,1261,2007-08-30,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[79126, 79135]",kept 3T (most common for this participant)
+UCSFFSX7,1261,2008-05-27,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[109394, 132220]",kept 3T (most common for this participant)
+UCSFFSX7,1261,2009-02-05,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[139510, 136188]",kept 3T (most common for this participant)
+UCSFFSX7,1262,2007-09-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[77044, 76649]",kept 3T (most common for this participant)
+UCSFFSX7,1262,2008-04-02,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103276, 103322]",kept 3T (most common for this participant)
+UCSFFSX7,1262,2009-03-13,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[143685, 143676]",kept 3T (most common for this participant)
+UCSFFSX7,1267,2007-09-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[83771, 80406]",kept 1.5T (most common for this participant)
+UCSFFSX7,1267,2008-03-24,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[101760, 101747]",kept 1.5T (most common for this participant)
+UCSFFSX7,1268,2007-09-21,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92226, 78668]",kept 3T (most common for this participant)
+UCSFFSX7,1268,2008-09-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[121012, 120251]",kept 3T (most common for this participant)
+UCSFFSX7,1268,2009-03-04,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[140734, 143103]",kept 3T (most common for this participant)
+UCSFFSX7,1269,2012-02-08,"2 back-to-back scans, same protocol, HV=[6546.0, 6200.0], IMAGEUID=[299283, 299281]",averaged
+UCSFFSX7,1271,2011-04-04,"2 back-to-back scans, same protocol, HV=[4704.0, 5484.0], IMAGEUID=[297304, 297305]",averaged
+UCSFFSX7,1271,2012-03-12,"2 back-to-back scans, same protocol, HV=[5533.0, 4596.0], IMAGEUID=[299210, 299209]",averaged
+UCSFFSX7,1280,2008-03-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[138890, 104471]",kept 3T (most common for this participant)
+UCSFFSX7,1280,2009-02-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[141149, 140739]",kept 3T (most common for this participant)
+UCSFFSX7,1286,2009-03-17,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[143838, 149636]",kept 3T (most common for this participant)
+UCSFFSX7,1286,2012-02-21,"2 back-to-back scans, same protocol, HV=[7989.0, 8037.0], IMAGEUID=[298436, 298435]",averaged
+UCSFFSX7,1288,2012-04-02,"2 back-to-back scans, same protocol, HV=[8785.0, 8760.0], IMAGEUID=[296418, 296417]",averaged
+UCSFFSX7,1292,2007-09-12,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[78796, 118760]",kept 1.5T (most common for this participant)
+UCSFFSX7,1292,2008-03-25,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[103296, 103301]",kept 1.5T (most common for this participant)
+UCSFFSX7,1300,2011-03-25,"2 back-to-back scans, same protocol, HV=[5977.0, 6079.0], IMAGEUID=[274707, 274708]",averaged
+UCSFFSX7,1300,2012-03-30,"2 back-to-back scans, same protocol, HV=[5574.0, 5779.0], IMAGEUID=[299246, 299245]",averaged
+UCSFFSX7,1300,2013-03-20,"2 back-to-back scans, same protocol, HV=[5741.0, 5593.0], IMAGEUID=[411293, 411294]",averaged
+UCSFFSX7,1300,2014-03-28,"2 back-to-back scans, same protocol, HV=[5741.0, 5479.0], IMAGEUID=[437691, 437690]",averaged
+UCSFFSX7,1318,2013-03-14,"2 back-to-back scans, same protocol, HV=[4822.0, 4605.0], IMAGEUID=[411308, 411309]",averaged
+UCSFFSX7,1321,2007-09-20,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[92434, 92238]",kept 1.5T (most common for this participant)
+UCSFFSX7,1321,2008-03-19,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[104466, 138909]",kept 1.5T (most common for this participant)
+UCSFFSX7,1337,2007-09-26,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[80965, 80953]",kept 3T (most common for this participant)
+UCSFFSX7,1337,2008-03-10,"same-day scans at different field strengths ['1.5T', '3T'], IMAGEUID=[101956, 101972]",kept 3T (most common for this participant)
+UCSFFSX7,1346,2011-03-28,"2 back-to-back scans, same protocol, HV=[4485.0, 5012.0], IMAGEUID=[296549, 296579]",averaged
+UCSFFSX7,1346,2012-04-13,"2 back-to-back scans, same protocol, HV=[4878.0, 4351.0], IMAGEUID=[299324, 299325]",averaged
+UCSFFSX7,1346,2013-04-19,"2 back-to-back scans, same protocol, HV=[5368.0, 5581.0], IMAGEUID=[411316, 411315]",averaged
+UCSFFSX7,1346,2014-04-02,"2 back-to-back scans, same protocol, HV=[6224.0, 6086.0], IMAGEUID=[434273, 434274]",averaged
+UCSFFSX7,1351,2012-04-19,"2 back-to-back scans, same protocol, HV=[5708.0, 6012.0], IMAGEUID=[332411, 332409]",averaged
+UCSFFSX7,1352,2011-04-05,"2 back-to-back scans, same protocol, HV=[7172.0, 7173.0], IMAGEUID=[296583, 296582]",averaged
+UCSFFSX7,1352,2012-04-16,"2 back-to-back scans, same protocol, HV=[6829.0, 6823.0], IMAGEUID=[299327, 299326]",averaged
+UCSFFSX7,1352,2013-03-22,"2 back-to-back scans, same protocol, HV=[6903.0, 6496.0], IMAGEUID=[411317, 411318]",averaged
+UCSFFSX7,1352,2014-03-10,"2 back-to-back scans, same protocol, HV=[6844.0, 7085.0], IMAGEUID=[432147, 432148]",averaged
+UCSFFSX7,1378,2011-06-12,"2 back-to-back scans, same protocol, HV=[7586.0, 7470.0], IMAGEUID=[297907, 297906]",averaged
+UCSFFSX7,1378,2012-05-06,"2 back-to-back scans, same protocol, HV=[6996.0, 7143.0], IMAGEUID=[368978, 368977]",averaged
+UCSFFSX7,1387,2012-02-27,"2 back-to-back scans, same protocol, HV=[5009.0, 4531.0], IMAGEUID=[299300, 299301]",averaged
+UCSFFSX7,1408,2009-11-23,"2 back-to-back scans, same protocol, HV=[8526.0, 8283.0], IMAGEUID=[439328, 439327]",averaged
+UCSFFSX7,1418,2013-08-08,"2 back-to-back scans, same protocol, HV=[6339.0, 6497.0], IMAGEUID=[394798, 394797]",averaged
+UCSFFSX7,1427,2012-08-15,"2 back-to-back scans, same protocol, HV=[7744.0, 7354.0], IMAGEUID=[411319, 411320]",averaged
+UCSFFSX7,1427,2013-08-19,"2 back-to-back scans, same protocol, HV=[7059.0, 7135.0], IMAGEUID=[400446, 400447]",averaged
+UCSFFSX7,1427,2014-08-18,"2 back-to-back scans, same protocol, HV=[7172.0, 7165.0], IMAGEUID=[467244, 467245]",averaged
+UCSFFSX7,6056,2025-09-24,"2 back-to-back scans, same protocol, HV=[7552.0, 7612.0], IMAGEUID=[11451757, 11451758]",averaged
+UCSFFSX7,6111,2024-10-28,"2 back-to-back scans, same protocol, HV=[7239.0, 7259.0], IMAGEUID=[11437990, 11437991]",averaged
+UCSFFSX7,6164,2024-01-31,"2 back-to-back scans, same protocol, HV=[7281.0, 7373.0], IMAGEUID=[10651640, 10651641]",averaged
+UCSFFSX7,6234,2024-08-13,"2 back-to-back scans, same protocol, HV=[6472.0, 6377.0], IMAGEUID=[11142040, 11142042]",averaged
+UCSFFSX7,6313,2025-04-24,"2 back-to-back scans, same protocol, HV=[8821.0, 8897.0], IMAGEUID=[11253978, 11253979]",averaged
+UCSFFSX7,6319,2025-02-06,"2 back-to-back scans, same protocol, HV=[7453.0, 7415.0], IMAGEUID=[11141452, 11141453]",averaged
+UCSFFSX7,6651,2025-11-12,"2 back-to-back scans, same protocol, HV=[6707.0, 6579.0], IMAGEUID=[11487674, 11487675]",averaged
+UCSFFSX7,6713,2025-03-25,"2 back-to-back scans, same protocol, HV=[5394.0, 5434.0], IMAGEUID=[11168763, 11168764]",averaged
+UCSFFSX7,6734,2024-07-17,"2 back-to-back scans, same protocol, HV=[7714.0, 7746.0], IMAGEUID=[10883382, 10883383]",averaged
+UCSFFSX7,7071,2025-01-10,"2 back-to-back scans, same protocol, HV=[6961.0, 7301.0], IMAGEUID=[11093586, 11093587]",averaged
+UCSFFSX7,7086,2025-06-26,"2 back-to-back scans, same protocol, HV=[6817.0, 6890.0], IMAGEUID=[11332562, 11332563]",averaged
+UCSFFSX7,10036,2024-03-26,"2 back-to-back scans, same protocol, HV=[5352.0, 5409.0], IMAGEUID=[10651616, 10651617]",averaged
+UCSFFSX7,10248,2024-09-25,"2 back-to-back scans, same protocol, HV=[6834.0, 6856.0], IMAGEUID=[10960189, 10960179]",averaged
+UCSFFSX7,10292,2024-10-25,"2 back-to-back scans, same protocol, HV=[8774.0, 8671.0], IMAGEUID=[11084563, 11084564]",averaged
+UCSFFSX7,10445,2025-01-27,"2 back-to-back scans, same protocol, HV=[8009.0, 7949.0], IMAGEUID=[11106144, 11106145]",averaged
+UCSFFSX7,10520,2025-02-27,"2 back-to-back scans, same protocol, HV=[7449.0, 7322.0], IMAGEUID=[11133744, 11133745]",averaged
+UCSFFSX7,10542,2025-03-11,"2 back-to-back scans, same protocol, HV=[8107.0, 8338.0], IMAGEUID=[11158426, 11158427]",averaged
+UCSFFSX7,10547,2025-02-26,"2 back-to-back scans, same protocol, HV=[7200.0, 6922.0], IMAGEUID=[11139506, 11139505]",averaged
+UCSFFSX7,10618,2025-03-24,"2 back-to-back scans, same protocol, HV=[7293.0, 7357.0], IMAGEUID=[11165536, 11165537]",averaged
+UCSFFSX7,10685,2025-05-19,"2 back-to-back scans, same protocol, HV=[7434.0, 7828.0], IMAGEUID=[11285151, 11285152]",averaged
+UCSFFSX7,10696,2025-05-29,"2 back-to-back scans, same protocol, HV=[6562.0, 6703.0], IMAGEUID=[11302831, 11302832]",averaged
+UCSFFSX7,10719,2025-06-05,"2 back-to-back scans, same protocol, HV=[7115.0, 7037.0], IMAGEUID=[11309435, 11309436]",averaged
+UCSFFSX7,10728,2025-05-05,"2 back-to-back scans, same protocol, HV=[8013.0, 7871.0], IMAGEUID=[11258190, 11258191]",averaged
+UCSFFSX7,10751,2025-06-03,"2 back-to-back scans, same protocol, HV=[7498.0, 7541.0], IMAGEUID=[11306635, 11306636]",averaged
+UCSFFSX7,10797,2025-05-28,"2 back-to-back scans, same protocol, HV=[6370.0, 6335.0], IMAGEUID=[11322609, 11322610]",averaged
+UCSFFSX7,10806,2025-06-11,"2 back-to-back scans, same protocol, HV=[6156.0, 6169.0], IMAGEUID=[11315017, 11315018]",averaged
+UCSFFSX7,10854,2025-07-15,"2 back-to-back scans, same protocol, HV=[8425.0, 8500.0], IMAGEUID=[11347300, 11347301]",averaged
+UCSFFSX7,10862,2025-08-07,"2 back-to-back scans, same protocol, HV=[7046.0, 7268.0], IMAGEUID=[11427784, 11427785]",averaged
+UCSFFSX7,10864,2025-07-09,"2 back-to-back scans, same protocol, HV=[5884.0, 5994.0], IMAGEUID=[11342265, 11342266]",averaged
+UCSFFSX7,10868,2025-07-28,"2 back-to-back scans, same protocol, HV=[5742.0, 6070.0], IMAGEUID=[11393591, 11393592]",averaged
+PTDEMOG,127,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,376,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,413,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,625,,"education differs between records: [6.0, 8.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,886,,"education differs between records: [15.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,2210,,"education differs between records: [12.0, 13.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,2304,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4081,,"education differs between records: [12.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4115,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4164,,"education differs between records: [12.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4168,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4229,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4350,,"education differs between records: [13.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4351,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4448,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4464,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4585,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4607,,"education differs between records: [16.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4644,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4713,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4799,,"education differs between records: [12.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4874,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4919,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,4944,,"education differs between records: [12.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5083,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5093,,"education differs between records: [17.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5167,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5169,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5178,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5203,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5222,,"education differs between records: [12.0, 13.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5243,,"education differs between records: [12.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5265,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,5292,,"education differs between records: [12.0, 13.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6015,,"education differs between records: [12.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6051,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6056,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6063,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6116,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6136,,"education differs between records: [12.0, 13.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6138,,"education differs between records: [17.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6180,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6209,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6218,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6220,,"education differs between records: [12.0, 13.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6221,,"education differs between records: [17.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6229,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6241,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6253,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6273,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6288,,"education differs between records: [19.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6293,,"education differs between records: [16.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6308,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6346,,"education differs between records: [16.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6349,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6369,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6384,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6416,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6439,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6449,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6468,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6470,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6473,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6500,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6509,,"education differs between records: [16.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6516,,"education differs between records: [14.0, 15.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6525,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6559,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6563,,"education differs between records: [12.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6586,,"education differs between records: [12.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6629,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6703,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6744,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6760,,"education differs between records: [19.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6768,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6785,,"education differs between records: [18.0, 19.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6790,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6831,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6861,,"education differs between records: [17.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6871,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6888,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6934,,"education differs between records: [18.0, 20.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6947,,"education differs between records: [15.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6970,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,6987,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7004,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7006,,"education differs between records: [15.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7013,,"education differs between records: [12.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7015,,"education differs between records: [16.0, 17.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7037,,"education differs between records: [14.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7068,,"education differs between records: [12.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7070,,"education differs between records: [12.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7089,,"education differs between records: [15.0, 16.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7105,,"education differs between records: [16.0, 18.0]",latest record on or before visit used; excluded in S7
+PTDEMOG,7112,,"education differs between records: [13.0, 14.0]",latest record on or before visit used; excluded in S7
