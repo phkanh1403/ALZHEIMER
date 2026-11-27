@@ -7,11 +7,15 @@ import streamlit as st
 
 from ..adni_import import import_zip
 from ..config import OPTIONAL_TABLES, REQUIRED_TABLES
+from ..partition import in_training
 from ..risk import applicable_models
 from . import common as ui
 
+RESULT_KEY = 'last_import'
+
 
 def _import_section(store):
+    _show_last_import()
     with st.expander('Import patients from an ADNI data export (ZIP)'):
         st.caption(f'The ZIP must contain {", ".join(REQUIRED_TABLES)} CSV files ({" and ".join(OPTIONAL_TABLES)} are '
                    'optional). Each participant is imported at their most recent MCI visit; importing again adds new '
@@ -21,14 +25,30 @@ def _import_section(store):
             return
         try:
             with st.spinner('Reading files and preparing patients…'):
-                r = import_zip(store, upload, ui.resources()['prep'], set(ui.cohort_inputs().RID))
+                r = import_zip(store, upload, ui.resources()['prep'], in_training)   # was: set(ui.cohort_inputs().RID)
         except (BadZipFile, ValueError, KeyError, OSError) as exc:   # malformed export: report it, keep the app up
             st.error(f'Import failed: {exc}')
             return
-        st.success(f"Added {r['added']} and updated {r['updated']} patient visits from {r['rids']} participants. "
-                   f"{r['skipped_train']} participants were skipped because they are in the model's training data.")
+        st.session_state[RESULT_KEY] = r      # shown after the rerun that refreshes the patient table
         st.rerun()
 
+
+def import_message(r):
+    """(kind, text) describing an import result; kind is 'success' or 'warning'."""
+    if r['rids'] and r['skipped_train'] == r['rids']:
+        return 'warning', (f"No patients added: all {r['rids']} participants in this ZIP are part of the model's "
+                           'training data (80% split), and the app does not score the people the model was trained on. '
+                           'Import data from other participants, for example the 20% test split (data/test).')
+    return 'success', (f"Added {r['added']} and updated {r['updated']} patient visits from {r['rids']} participants. "
+                       f"{r['skipped_train']} participants were skipped because they are in the model's training "
+                       'data.')
+
+
+def _show_last_import():
+    r = st.session_state.pop(RESULT_KEY, None)
+    if r is not None:
+        kind, text = import_message(r)
+        getattr(st, kind)(text)
 
 def _best_model(features):
     usable = applicable_models(features)

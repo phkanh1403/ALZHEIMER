@@ -69,12 +69,16 @@ def _extract_tables(archive, folder):
             shutil.copyfileobj(src, dest)
 
 
-def import_zip(store, file, prep, train_ids):
-    """Import every participant's latest MCI visit; participants in the training data are skipped."""
+def import_zip(store, file, prep, in_training):
+    """Import every participant's latest MCI visit; participants in the training data are skipped.
+
+    in_training: rid -> bool (the app uses the frozen split, partition.in_training).
+    """
     with tempfile.TemporaryDirectory() as tmp, ZipFile(file) as archive:
         folder = Path(tmp)
         _extract_tables(archive, folder)
         frame = inputs_from_folder(folder, prep)
     rids = set(frame.RID)
+    train_ids = {r for r in rids if in_training(r)}
     added, updated = store.upsert(profile_rows(frame[~frame.RID.isin(train_ids)], 'ZIP'))
-    return dict(added=added, updated=updated, rids=len(rids), skipped_train=len(rids & set(train_ids)))
+    return dict(added=added, updated=updated, rids=len(rids), skipped_train=len(train_ids))
