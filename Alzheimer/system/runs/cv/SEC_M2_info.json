@@ -1,0 +1,1 @@
+{"name": "SEC_M2", "persons": 604, "landmarks": 1318, "events_window": 201, "lambdas": {"M2": {"100.0": 63, "300.0": 22, "30.0": 15}}, "lambda_at_grid_edge": {"M2": 0.0}, "seconds": 170}

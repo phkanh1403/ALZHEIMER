@@ -1,0 +1,6 @@
+model,landmarks,persons,persons_with_event_in_window,lam_secondary,lam_paired
+M0,2754,865,323,30.0,100.0
+M1,2271,811,312,30.0,100.0
+M2,1318,604,222,100.0,100.0
+M3,1176,558,202,300.0,300.0
+"M3, MRI <= 180 days (S9)",1018,531,192,,
