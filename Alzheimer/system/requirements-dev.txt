@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8,<10
+ruff>=0.6
+# report build (build_report.py); also needs XeLaTeX with TeX Gyre Termes and pandoc on PATH
+matplotlib>=3.8,<4
+python-docx>=1.1,<2

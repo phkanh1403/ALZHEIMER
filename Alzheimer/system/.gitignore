@@ -1,0 +1,17 @@
+__pycache__/
+.venv/
+.pytest_cache/
+.ruff_cache/
+instance/
+*.tmp
+dist/
+docs/build/
+*.pandoc.tex
+
+# ADNI data and participant-level outputs (ADNI Data Use Agreement): never commit or distribute
+data/train/
+data/test/
+runs/train_landmarks.csv
+runs/train_inputs.csv
+runs/conflicts.csv
+runs/cv/*_oof.csv*
